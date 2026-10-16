@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos | Ferretería Inversiones Avelar</title>
+  <meta name="description" content="Explore el catálogo completo de Ferretería Inversiones Avelar: materiales de construcción, herramientas manuales y eléctricas, fontanería, electricidad y pinturas.">
+  
+  <meta property="og:title" content="Catálogo de Productos | Inversiones Avelar">
+  <meta property="og:description" content="Inventario completo en Langue, Valle. Todo lo que necesita para su obra civil y hogar con precios justos.">
+  <meta property="og:image" content="https://www.inversionesavelar.com/img/og-imagen.jpg">
+  <meta property="og:url" content="https://www.inversionesavelar.com/productos.html">
+  
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <div class="header-top">
+    <div class="container">
+      <div class="header-top-info">
+        <span>📍 Salida a San Francisco, Barrio Nuevo, Langue, Valle</span>
+        <!-- CONFIRMAR CON EL CLIENTE -->
+        <span>⏰ Lun - Sáb: 7:00 AM - 5:30 PM | Dom: 8:00 AM - 12:00 PM</span>
+      </div>
+      <div>
+        <span>📞 Tel: +504 3344-3305</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="Inicio Inversiones Avelar">
+        <img src="img/logo.png" alt="Logotipo de Inversiones Avelar" width="50" height="50">
+        <div class="brand-titles">
+          <div class="logo-title">INVERSIONES AVELAR</div>
+          <span>FERRETERÍA Y CONSTRUCCIÓN</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li><a href="productos.html" class="nav-link activo" aria-current="page">Productos</a></li>
+          <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+    <section class="section" style="background-color: var(--color-black); color: var(--color-white); padding: 50px 0;">
+      <div class="container text-center">
+        <h1 class="section-title" style="color: var(--color-primary);">Catálogo de Productos</h1>
+        <p style="color: #ccc;">Materiales y herramientas de primera calidad organizados por categorías</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        
+        <!-- Buscador -->
+        <div class="search-container">
+          <input type="text" id="searchProducts" class="search-input" placeholder="Buscar por nombre o descripción...">
+          <button class="search-btn" aria-label="Buscar"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></button>
+        </div>
+
+        <!-- Botones de Filtrado (F-06 y Documento de Integración) -->
+        <div class="filters-bar">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="construccion">Construcción</button>
+          <button class="filter-btn" data-filter="herramientas-electricas">Herramientas Eléctricas</button>
+          <button class="filter-btn" data-filter="herramientas-manuales">Herramientas Manuales</button>
+          <button class="filter-btn" data-filter="fontaneria">Fontanería y Plomería</button>
+          <button class="filter-btn" data-filter="electricidad">Electricidad</button>
+          <button class="filter-btn" data-filter="pintura">Pintura y Acabados</button>
+          <button class="filter-btn" data-filter="seguridad">Seguridad y Protección</button>
+          <button class="filter-btn" data-filter="cerrajeria">Cerrajería y Fijación</button>
+          <button class="filter-btn" data-filter="jardineria">Jardinería y Agro</button>
+        </div>
+
+        <!-- Rejilla de Productos integrados estrictamente desde el documento -->
+        <div class="grid-4" id="catalogoGrid">
+
+          <!-- 1. Taladro Truper -->
+          <article class="card-dark product-card" data-category="herramientas-electricas">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Herramientas Eléctricas</span>
+              <img src="IMG/Taladro/atornillador-inalambrico-Truper.png" alt="Taladro/Atornillador inalámbrico Truper 20 v (con batería de ion Litio)" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Taladro/Atornillador inalámbrico Truper 20 v (con batería de ion Litio)</h3>
+              <p class="product-desc">Es una herramienta eléctrica portátil inalámbrica para realizar trabajos de perforación y atornillado en diversos materiales como madera, metal o plástico.</p>
+              <div class="product-price">L. 1,850.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Taladro/Atornillador%20inal%C3%A1mbrico%20Truper%2020%20v" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 2. Carretilla Truper -->
+          <article class="card-dark product-card" data-category="construccion">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Construcción</span>
+              <img src="IMG/Carretilla-concha de metal-truper.png" alt="Carretilla/con concha de metal truper" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Carretilla/con concha de metal truper</h3>
+              <p class="product-desc">Capacidad y estructura: Concha de color naranja, Una rueda delantera neumática, diseñada para soportar cargas pesadas y trabajos duros.</p>
+              <div class="product-price">L. 1,450.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Carretilla/con%20concha%20de%20metal%20truper" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 3. Piocha -->
+          <article class="card-dark product-card" data-category="herramientas-manuales">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Herramientas Manuales</span>
+              <img src="IMG/Piocha- (zapapico o Pico).png" alt="Piocha (zapapico o Pico)" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Piocha (zapapico o Pico)</h3>
+              <p class="product-desc">Es una herramienta manual de excavación para romper terrenos duros o rocosos, cavar Zanjas y remover raíces, construcción, agricultura y jardinería.</p>
+              <div class="product-price">L. 380.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Piocha%20(zapapico%20o%20Pico)" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 4. Rodillo pintar -->
+          <article class="card-dark product-card" data-category="pintura">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Pintura</span>
+              <img src="IMG/Rodillo-pintar.png" alt="Rodillo para pintar/maneral ergonómico" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Rodillo para pintar/maneral ergonómico</h3>
+              <p class="product-desc">Un rodillo utilizado para aplicar pintura de manera rápida y uniforme en paredes, techos y diferentes superficies.</p>
+              <div class="product-price">L. 120.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Rodillo%20para%20pintar/maneral%20ergon%C3%B3mico" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 5. Brocha Pretul -->
+          <article class="card-dark product-card" data-category="pintura">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Pintura</span>
+              <img src="IMG/Brocha-para-pintar.png" alt="Brocha para pintar de marca Pretul." loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Brocha para pintar de marca Pretul.</h3>
+              <p class="product-desc">Es una herramienta manual para aplicar pintura, realizar retoques y dar acabados uniformes en paredes, puertas, etc.</p>
+              <div class="product-price">L. 45.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Brocha%20para%20pintar%20de%20marca%20Pretul" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 6. Botas de Hule -->
+          <article class="card-dark product-card" data-category="seguridad">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Seguridad</span>
+              <img src="IMG/Botas-industriales-hule.png" alt="Botas industriales de hule/ PVC" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Botas industriales de hule/ PVC</h3>
+              <p class="product-desc">Es un calzado de protección impermeable diseñado para proteger los pies y las parte bajas de las piernas contra el agua, lodo, superficies húmedas en trabajos: construcción, agricultura, jardinería e industria en general.</p>
+              <div class="product-price">L. 280.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Botas%20industriales%20de%20hule/%20PVC" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 7. Cinta Métrica -->
+          <article class="card-dark product-card" data-category="herramientas-manuales">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Herramientas Manuales</span>
+              <img src="IMG/Cinta-metrica.png" alt="Cinta métrica / Flexómetro de 3m x 16 mm." loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Cinta métrica / Flexómetro de 3m x 16 mm.</h3>
+              <p class="product-desc">Una herramienta manual de medición precisa indispensable para trabajos de carpintería, construcción y uso doméstico en general.</p>
+              <div class="product-price">L. 65.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Cinta%20m%C3%A9trica" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 8. Serrucho de mano -->
+          <article class="card-dark product-card" data-category="herramientas-manuales">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Herramientas Manuales</span>
+              <img src="IMG/Serucho-de-mano.png" alt="Serrucho de mano" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Serrucho de mano</h3>
+              <p class="product-desc">una herramienta manual de corte diseñada para realizar cortes precisos y limpio en madera y sus derivados en trabajos de carpintería, construcción.</p>
+              <div class="product-price">L. 180.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Serrucho%20de%20mano" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 9. Kit de Batería Ingco -->
+          <article class="card-dark product-card" data-category="herramientas-electricas">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Herramientas Eléctricas</span>
+              <img src="IMG/Kit-de-batería-y-cargador-ingco.png" alt="Kit de batería y cargador ingco 20v" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Kit de batería y cargador ingco 20v (2 baterías de 4.0 Ah cargador rápido de 4A)</h3>
+              <p class="product-desc">Kit de alimentación para la línea de herramientas inalámbricas de la plataforma 20v de la marca encono, diseño para proveer energía de larga duración y recarga rápidas.</p>
+              <div class="product-price">L. 1,600.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Kit%20de%20bater%C3%ADa%20y%20cargador%20ingco" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 10. Sopladora Brickell -->
+          <article class="card-dark product-card" data-category="herramientas-electricas">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Herramientas Eléctricas</span>
+              <img src="IMG/Sopladora-aspiradora-eléctrica-(Brickell).png" alt="Sopladora/Aspiradora eléctrica. (Brickell)" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Sopladora/Aspiradora eléctrica. (Brickell)</h3>
+              <p class="product-desc">Es una herramienta eléctrica portátil de doble función para soplar y aspirar polvo, hojas y residuos en el hogar o taller.</p>
+              <div class="product-price">L. 950.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Sopladora/Aspiradora%20el%C3%A9ctrica" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 11. Rotomartillo Truper -->
+          <article class="card-dark product-card" data-category="herramientas-electricas">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Herramientas Eléctricas</span>
+              <img src="IMG/Rotomartillo- Truper.png" alt="Rotomartillo de 1/2'' (13 mm Truper)" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Rotomartillo de 1/2" (13 mm Truper)</h3>
+              <p class="product-desc">Una herramienta eléctrica para perforar materiales resistentes como concreto, mampostería, acero y madera, con funciones de taladro convencional y percusión</p>
+              <div class="product-price">L. 1,420.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Rotomartillo%20Truper" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 12. Bisagra de Acero -->
+          <article class="card-dark product-card" data-category="cerrajeria">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Cerrajería</span>
+              <img src="IMG/Bisagra-acero.png" alt="Bisagra de acero-(modelo BI433AB)" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Bisagra de acero-(modelo BI433AB)</h3>
+              <p class="product-desc">Es un herraje de articulación diseñado para la instalación y el soporte de puertas de madera o metal.</p>
+              <div class="product-price">L. 55.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Bisagra%20de%20acero" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 13. Extensión Eléctrica Brickell -->
+          <article class="card-dark product-card" data-category="electricidad">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Electricidad</span>
+              <img src="IMG/Extensión-electrica-brickel.png" alt="Extensión eléctrica de uso rudo 15 m Brickell" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Extensión eléctrica de uso rudo 15 m Brickell</h3>
+              <p class="product-desc">Cable de extensión de 15m diseñado para llevar energía a herramientas y equipos en talleres, hogar y construcción.</p>
+              <div class="product-price">L. 380.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Extensi%C3%B3n%20el%C3%A9ctrica%2015m" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 14. Barniz Madetec -->
+          <article class="card-dark product-card" data-category="pintura">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Pintura</span>
+              <img src="IMG/Barnis-madera-secado-rapido.png" alt="Barnis para madera secado rápido" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Barnis para madera secado rápido</h3>
+              <p class="product-desc">Recubrimiento protector y decorativo para madera, que combina tinte, sellador y acabado en un solo producto. Marca: madetec</p>
+              <div class="product-price">L. 320.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Barniz%20Madetec" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 15. Sierra de Mano -->
+          <article class="card-dark product-card" data-category="herramientas-manuales">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Herramientas Manuales</span>
+              <img src="IMG/Cierra-de-mano.png" alt="Cierra de mano" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Cierra de mano</h3>
+              <p class="product-desc">Herramienta manual de corte diseñada para metales, plásticos, tubo de PVC y otros materiales en plomería y construcción.</p>
+              <div class="product-price">L. 130.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Sierra%20de%20mano" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 16. Manguera para Jardín -->
+          <article class="card-dark product-card" data-category="jardineria">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Jardinería</span>
+              <img src="IMG/Manguera-reforzada-jardin.png" alt="Manguera reforzada para jardín" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Manguera reforzada para jardín</h3>
+              <p class="product-desc">Es una manguera flexible diseñada para el riego de jardines, césped, áreas verdes y labores de limpieza en el hogar.</p>
+              <div class="product-price">L. 290.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Manguera%20reforzada" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 17. Llave de paso PVC -->
+          <article class="card-dark product-card" data-category="fontaneria">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Fontanería</span>
+              <img src="IMG/Manija-mariposa/llave-pvc.png" alt="Manija de mariposa/llave de paso PVC" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Manija de mariposa/llave de paso PVC</h3>
+              <p class="product-desc">Es un Accesorio de fontanería fabricado en PVC diseñado para regular o interrumpir el flujo de agua en tuberías hidráulicas.</p>
+              <div class="product-price">L. 45.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Llave%20de%20paso%20PVC" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 18. Mazo de Acero -->
+          <article class="card-dark product-card" data-category="herramientas-manuales">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Herramientas Manuales</span>
+              <img src="IMG/Mazo-acero-martillo.png" alt="Mazo de acero/Martillo" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Mazo de acero/Martillo</h3>
+              <p class="product-desc">Herramienta manual de impacto para trabajos pesados de golpeteo, demolición ligera, corte de cinceles y asentamiento de materiales de construcción y albañilería.</p>
+              <div class="product-price">L. 350.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Mazo%20de%20acero" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 19. Casco de Construcción -->
+          <article class="card-dark product-card" data-category="seguridad">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Seguridad</span>
+              <img src="IMG/Casco-construcción.png" alt="Casco de protección industrial" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Casco de protección industrial</h3>
+              <p class="product-desc">Es un equipo de protección personal para resguardar la cabeza contra impactos de objetos en caídas, golpes en entornos de construcción.</p>
+              <div class="product-price">L. 110.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Casco%20de%20protecci%C3%B3n" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 20. Sierra Circular Truper -->
+          <article class="card-dark product-card" data-category="herramientas-electricas">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Herramientas Eléctricas</span>
+              <img src="IMG/Cierra-circular" alt="Cierra Circular" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Cierra Circular</h3>
+              <p class="product-desc">Herramienta eléctrica portátil diseñada para realizar cortes rectos, longitudinales, transversales y en bisel en madera en construcción y carpintería.</p>
+              <div class="product-price">L. 2,350.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Sierra%20Circular" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 21. Martillo de Acero -->
+          <article class="card-dark product-card" data-category="herramientas-manuales">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Herramientas Manuales</span>
+              <img src="IMG/Martillo-acero.png" alt="Martillo de acero" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Martillo de acero</h3>
+              <p class="product-desc">Es una herramienta manual en construcción, diseñada para clavar y extraer clavos con facilidad y precisión.</p>
+              <div class="product-price">L. 160.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Martillo%20de%20acero" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 22. Válvula de Bronce -->
+          <article class="card-dark product-card" data-category="fontaneria">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Fontanería</span>
+              <img src="IMG/Válvula-compuerta-bronce.png" alt="Válvula de compuerta de bronce de ¾” (200 WOG)" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Válvula de compuerta de bronce de ¾” (200 WOG)</h3>
+              <p class="product-desc">Es una válvula de fontanería, diseñada para abrir o cerrar de forma gradual el paso de fluidos en tuberías de aguas.</p>
+              <div class="product-price">L. 220.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20V%C3%A1lvula%20de%20compuerta%20bronce" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 23. Candado de Acero Laminado -->
+          <article class="card-dark product-card" data-category="cerrajeria">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Cerrajería</span>
+              <img src="IMG/Candado-acero-laminado.png" alt="Candado de acero laminado de 50 mm" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Candado de acero laminado de 50 mm</h3>
+              <p class="product-desc">Es un dispositivo de seguridad de alta resistencia para proteger portones, bodegas, cortinas metálicas, cajas de herramientas y más.</p>
+              <div class="product-price">L. 175.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Candado%20de%20acero%20laminado" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 24. Cemento Uno Uso General -->
+          <article class="card-dark product-card" data-category="construccion">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Construcción</span>
+              <img src="IMG/Cemento-Uno-uso-general.png" alt="Cemento Uno uso general" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Cemento Uno uso general</h3>
+              <p class="product-desc">Excelente Resistencia, ideal para todo tipo de obra de construcción civil, residencial y trabajos estructurales de alta calidad y rendimiento.</p>
+              <div class="product-price">L. 220.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Cemento%20Uno" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 25. Bloques de Concreto -->
+          <article class="card-dark product-card" data-category="construccion">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Construcción</span>
+              <img src="IMG/Bloques-de-concreto Gris.png" alt="Bloques de concreto Gris" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Bloques de concreto Gris</h3>
+              <p class="product-desc">Para construcción y mampostería, para aligerar peso y facilitar paso de instalaciones o refuerzo estructurales, de alta resistencia a la compresión y durabilidad para muros y paredes.</p>
+              <div class="product-price">L. 22.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Bloques%20de%20concreto" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 26. Varillas Corrugadas -->
+          <article class="card-dark product-card" data-category="construccion">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Construcción</span>
+              <img src="IMG/Varillas-de-acero-corrugado.png" alt="Varillas de acero corrugado" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Varillas de acero corrugado</h3>
+              <p class="product-desc">Diseñadas para el refuerzo estructural de concreto en cimientos, columnas, losas y muros, proporcionando alta resistencia a la tensión, durabilidad y máxima adherencia en obras civiles.</p>
+              <div class="product-price">L. 165.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Varillas%20de%20acero" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 27. Canaletas -->
+          <article class="card-dark product-card" data-category="construccion">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Construcción</span>
+              <img src="IMG/Canaletas.png" alt="Canaletas" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Canaletas</h3>
+              <p class="product-desc">Diseñados para la fabricación de estructuras metálicas, marcos, rejas, portones y soportes arquitectónicos, ofreciendo alta resistencia a la flexión, durabilidad y facilidad de soldadura.</p>
+              <div class="product-price">L. 340.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Canaletas" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 28. Lamina de zinc -->
+          <article class="card-dark product-card" data-category="construccion">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Construcción</span>
+              <img src="IMG/Lamina-de-zinc.png" alt="Lamina de zinc" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Lamina de zinc</h3>
+              <p class="product-desc">Diseñada para cubiertas de techos y cerramientos perimetrales en obras residenciales e industriales.</p>
+              <div class="product-price">L. 210.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Lamina%20de%20zinc" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 29. Tubos de PVC -->
+          <article class="card-dark product-card" data-category="fontaneria">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Fontanería</span>
+              <img src="IMG/Tubos-de-PVC-blanco-diferentes-diámetros-longitudes.png" alt="Tubos de PVC blanco de diferentes diámetros y longitudes" loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Tubos de PVC blanco de diferentes diámetros y longitudes</h3>
+              <p class="product-desc">Diseñados para sistemas de conducción de agua, desagüe, instalaciones sanitarias o eléctricas, ofreciendo alta resistencia a la corrosión, durabilidad y facilidad de corte e instalación.</p>
+              <div class="product-price">L. 140.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Tubos%20de%20PVC%20blanco" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+          <!-- 30. Amoladora Angular Ingco -->
+          <article class="card-dark product-card" data-category="herramientas-electricas">
+            <div class="product-img-wrapper">
+              <span class="product-category-tag">Herramientas Eléctricas</span>
+              <img src="IMG/Amoladora-Esmeriladora-angular industrial.png" alt="Amoladora / Esmeriladora angular industrial." loading="lazy">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Amoladora / Esmeriladora angular industrial.</h3>
+              <p class="product-desc">Herramienta eléctrica de gran potencia diseñada para trabajos pesados de corte, desbastes y pulido en metales, de construcción Marca: INGCO</p>
+              <div class="product-price">L. 2,100.00 <!-- CONFIRMAR CON EL CLIENTE --></div>
+              <a href="https://wa.me/50433443305?text=Hola,%20deseo%20consultar%20sobre:%20Amoladora%20angular%20Ingco" class="btn-whatsapp-sm" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Inversiones Avelar</h4>
+        <p>Brindando soluciones a la comunidad en el área de la construcción. Creciendo para ser una de las mejores ferreterías de la zona.</p>
+        <p><em>«Todo lo puedo en Cristo que me fortalece» — Filipenses 4:13</em></p>
+      </div>
+      <div class="footer-col">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="productos.html">Catálogo de Productos</a></li>
+          <li><a href="servicios.html">Servicios y Flete</a></li>
+          <li><a href="contacto.html">Contacto y Ubicación</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Horarios de Atención</h4>
+        <!-- CONFIRMAR CON EL CLIENTE -->
+        <p>Lunes a Sábado:<br>7:00 AM - 5:30 PM</p>
+        <p>Domingo:<br>8:00 AM - 12:00 PM</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p>📍 Salida a San Francisco, Barrio Nuevo, Langue, Valle, Honduras.</p>
+        <p>📞 Teléfono: <a href="tel:+50433443305">+504 3344-3305</a></p>
+        <p>✉️ Correo: <a href="mailto:titoavelar@gmail.com">titoavelar@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Inversiones Avelar. Todos los derechos reservados.</p>
+      <p>Sitio desarrollado por el equipo <span class="footer-credits">Innovación y crecimiento</span> (Génesis Ávila, Sindy Alvarado, Cesia Paz, Jenny Izaguirre).</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20hacer%20un%20pedido%20de%20productos" class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp a Inversiones Avelar">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zm5.82 14.07c-.24.68-1.4 1.26-1.93 1.34-.52.08-1.2.14-3.48-.8-2.92-1.2-4.81-4.18-4.96-4.38-.14-.2-1.19-1.58-1.19-3.02 0-1.44.75-2.15 1.02-2.44.27-.29.59-.36.79-.36.2 0 .39.01.56.02.18.01.42-.07.66.5.24.58.82 2.01.89 2.16.07.15.12.33.02.53-.1.2-.15.33-.3.51-.15.18-.31.39-.45.53-.15.14-.3.3-.13.6.17.29.77 1.27 1.66 2.06 1.14 1.02 2.1 1.33 2.4 1.48.29.14.47.12.64-.08.18-.2.75-.87.95-1.17.2-.3.41-.25.68-.15.27.1 1.73.81 2.03.96.3.15.5.22.57.34.08.13.08.74-.16 1.42z"/></svg>
+  </a>
+
+</body>
+</html>

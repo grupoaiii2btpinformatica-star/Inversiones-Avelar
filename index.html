@@ -1,0 +1,2863 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inversiones Avelar | Ferretería y Materiales de Construcción en Langue, Valle</title>
+  <meta name="description" content="Inversiones Avelar - Ferretería y Materiales de Construcción en Langue, Valle. Todo lo que necesita para su obra civil y hogar con precios justos y entregas inmediatas.">
+
+  <!-- Tipografía Oficial F-06: PT Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       PALETA OFICIAL F-06
+       Fondo Principal: Amarillo (#FFDB58)
+       Tarjetas: Negro (#000000)
+       Acentos: Blanco (#FFFFFF)
+       ========================================================================== */
+    :root {
+      --color-primary-yellow: #FFDB58;   /* Fondo principal */
+      --color-primary-dark: #e6c543;
+      --color-black: #000000;            /* Fondo de tarjetas */
+      --color-white: #FFFFFF;            /* Acentos */
+      --font-family: 'PT Serif', Georgia, serif;
+      --shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      --transition: all 0.25s ease-in-out;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--color-primary-yellow); /* FONDO PRINCIPAL AMARILLO */
+      color: var(--color-black);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1250px;
+      margin: 0 auto;
+    }
+
+    /* Barra Superior */
+    .top-bar {
+      background-color: var(--color-black);
+      color: var(--color-white);
+      font-size: 0.85rem;
+      padding: 8px 0;
+      border-bottom: 2px solid var(--color-white);
+    }
+
+    .top-bar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* Navegación */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: var(--color-black);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      border-bottom: 3px solid var(--color-white);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      background-color: var(--color-primary-yellow);
+      color: var(--color-black);
+      width: 44px;
+      height: 44px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.4rem;
+      border: 2px solid var(--color-white);
+    }
+
+    .brand-text h1 {
+      font-size: 1.35rem;
+      color: var(--color-primary-yellow);
+      line-height: 1.1;
+      font-weight: 700;
+    }
+
+    .brand-text span {
+      font-size: 0.75rem;
+      color: var(--color-white);
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .nav-link {
+      font-weight: 700;
+      color: var(--color-white);
+      padding: 8px 14px;
+      border-radius: 4px;
+      transition: var(--transition);
+    }
+
+    .nav-link:hover, .nav-link.active {
+      background-color: var(--color-primary-yellow);
+      color: var(--color-black);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: var(--color-primary-yellow);
+    }
+
+    /* Botones */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      font-weight: 700;
+      border-radius: 4px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: var(--transition);
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background-color: var(--color-primary-yellow);
+      color: var(--color-black);
+      border-color: var(--color-white);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--color-white);
+      color: var(--color-black);
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+      border-color: #25D366;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1eb956;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), #000;
+      color: var(--color-white);
+      padding: 90px 0 80px;
+      text-align: center;
+      border-bottom: 4px solid var(--color-white);
+    }
+
+    .verse-badge {
+      display: inline-block;
+      background-color: var(--color-primary-yellow);
+      color: var(--color-black);
+      font-weight: 700;
+      padding: 8px 20px;
+      border-radius: 4px;
+      font-size: 1rem;
+      margin-bottom: 24px;
+      border: 2px solid var(--color-white);
+    }
+
+    .hero-title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 18px;
+      color: var(--color-primary-yellow);
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-desc {
+      font-size: 1.15rem;
+      color: var(--color-white);
+      max-width: 800px;
+      margin: 0 auto 35px;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    /* Secciones (Fondo Amarillo) */
+    .section {
+      padding: 75px 0;
+      background-color: var(--color-primary-yellow);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title {
+      font-size: 2.3rem;
+      color: var(--color-black);
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .section-subtitle {
+      color: #222;
+      font-size: 1.05rem;
+      font-weight: bold;
+    }
+
+    .divider {
+      width: 80px;
+      height: 4px;
+      background-color: var(--color-white);
+      margin: 12px auto 0;
+      border-radius: 2px;
+      border: 1px solid var(--color-black);
+    }
+
+    /* Tarjetas Negras */
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+
+    .card-dark {
+      background-color: var(--color-black);
+      color: var(--color-white);
+      border-radius: 6px;
+      padding: 35px 25px;
+      box-shadow: var(--shadow);
+      border: 2px solid var(--color-white);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-dark:hover {
+      transform: translateY(-5px);
+      border-color: var(--color-primary-yellow);
+    }
+
+    .card-dark h3 {
+      color: var(--color-primary-yellow);
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-dark p {
+      color: var(--color-white);
+      font-size: 0.98rem;
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    /* Buscador y Filtros */
+    .search-filter-box {
+      margin-bottom: 40px;
+    }
+
+    .search-bar {
+      max-width: 550px;
+      margin: 0 auto 25px;
+      display: flex;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid var(--color-black);
+      border-radius: 4px 0 0 4px;
+      font-size: 1rem;
+      outline: none;
+      background: var(--color-white);
+    }
+
+    .search-bar button {
+      background-color: var(--color-black);
+      color: var(--color-primary-yellow);
+      border: 2px solid var(--color-black);
+      padding: 0 20px;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .filter-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .filter-btn {
+      background: var(--color-black);
+      color: var(--color-white);
+      border: 2px solid var(--color-white);
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      background-color: var(--color-white);
+      color: var(--color-black);
+      border-color: var(--color-black);
+    }
+
+    /* Cuadrícula de Productos */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .product-card {
+      background-color: var(--color-black);
+      color: var(--color-white);
+      border-radius: 6px;
+      border: 2px solid var(--color-white);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--color-primary-yellow);
+    }
+
+    .product-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      background-color: #1a1a1a;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 2px solid var(--color-white);
+    }
+
+    .product-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover .product-img-wrap img {
+      transform: scale(1.05);
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: var(--color-primary-yellow);
+      color: var(--color-black);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      border: 1px solid var(--color-black);
+    }
+
+    .product-info {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-title {
+      font-size: 1.05rem;
+      color: var(--color-primary-yellow);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .product-desc {
+      font-size: 0.88rem;
+      color: #e0e0e0;
+      margin-bottom: 16px;
+      flex-grow: 1;
+      line-height: 1.5;
+    }
+
+    /* Fallback para fotos que aún no están en IMG */
+    .img-fallback {
+      width: 100%;
+      height: 100%;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: #111111;
+      border: 2px dashed var(--color-primary-yellow);
+      color: var(--color-primary-yellow);
+      font-size: 0.85rem;
+    }
+
+    /* Cotizador y Contacto */
+    .quote-contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+    }
+
+    .form-card {
+      background-color: var(--color-black);
+      color: var(--color-white);
+      padding: 35px 25px;
+      border-radius: 6px;
+      border: 2px solid var(--color-white);
+      box-shadow: var(--shadow);
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--color-primary-yellow);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #555;
+      background-color: #1a1a1a;
+      color: var(--color-white);
+      border-radius: 4px;
+      font-family: inherit;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--color-primary-yellow);
+    }
+
+    .info-card {
+      background-color: var(--color-black);
+      color: var(--color-white);
+      padding: 30px 25px;
+      border-radius: 6px;
+      border: 2px solid var(--color-white);
+      box-shadow: var(--shadow);
+      margin-bottom: 25px;
+    }
+
+    .info-item {
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+    }
+
+    .info-item strong {
+      color: var(--color-primary-yellow);
+    }
+
+    .map-frame {
+      width: 100%;
+      height: 280px;
+      border: 2px solid var(--color-black);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .map-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Pie de Página */
+    .main-footer {
+      background-color: var(--color-black);
+      color: var(--color-white);
+      padding: 60px 0 20px;
+      border-top: 4px solid var(--color-white);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 35px;
+      margin-bottom: 35px;
+    }
+
+    .footer-col h4 {
+      color: var(--color-primary-yellow);
+      font-size: 1.15rem;
+      margin-bottom: 15px;
+      position: relative;
+      padding-bottom: 6px;
+    }
+
+    .footer-col h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background-color: var(--color-white);
+    }
+
+    .footer-col p {
+      color: #ccc;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #333;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    .footer-credits {
+      color: var(--color-primary-yellow);
+      font-weight: bold;
+    }
+
+    /* Botón Flotante WhatsApp */
+    .wa-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      z-index: 1000;
+      border: 2px solid white;
+    }
+
+    .wa-float:hover {
+      transform: scale(1.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .quote-contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .top-bar { display: none; }
+      .menu-toggle { display: block; }
+      .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 270px;
+        height: 100vh;
+        background-color: var(--color-black);
+        flex-direction: column;
+        padding: 70px 20px;
+        transition: right 0.3s ease;
+        box-shadow: -4px 0 15px rgba(0,0,0,0.5);
+      }
+      .nav-menu.active { right: 0; }
+      .nav-link { color: white; width: 100%; border-bottom: 1px solid #333; }
+      .hero-title { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra Superior -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div>
+        <span>📍 Salida a San Francisco, Barrio Nuevo, Langue, Valle</span>
+        <span style="margin-left: 15px;">⏰ Lun - Sáb: 7:00 AM - 5:30 PM</span>
+      </div>
+      <div>
+        <span>📞 Pedidos: +504 3344-3305</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navegación Principal -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#inicio" class="brand-logo">
+        <div class="brand-icon">IA</div>
+        <div class="brand-text">
+          <h1>INVERSIONES AVELAR</h1>
+          <span>FERRETERÍA Y CONSTRUCCIÓN</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menú">☰</button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#catalogo" class="nav-link">Catálogo</a></li>
+        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+        <li><a href="#cotizador" class="nav-link">Cotizar</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Banner Hero con Versículo F-06 -->
+  <header class="hero" id="inicio">
+    <div class="container">
+      <span class="verse-badge">«Todo lo puedo en Cristo que me fortalece» — Filipenses 4:13</span>
+      <h2 class="hero-title">Soluciones Completas para la Construcción de sus Proyectos</h2>
+      <p class="hero-desc">
+        En Inversiones Avelar nos esmeramos día con día en brindar un servicio de excelencia con precios justos, 
+        responsabilidad y entregas inmediatas en Langue y zonas aledañas.
+      </p>
+      <div class="hero-actions">
+        <a href="#catalogo" class="btn btn-primary">Ver Todos los Productos</a>
+        <a href="#cotizador" class="btn btn-whatsapp">Solicitar Cotización Inmediata</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Nosotros: Historia, Visión y Objetivo Oficiales -->
+  <section class="section" id="nosotros">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Sobre Nosotros</h2>
+        <p class="section-subtitle">Trayectoria, compromiso y fe al servicio de nuestra comunidad</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <!-- Historia -->
+        <article class="card-dark">
+          <h3>📖 Historia del Negocio</h3>
+          <p>
+            Como negocio nacimos en el año <strong>2004</strong>. Mi esposa <strong>Yeni</strong> comenzó vendiendo productos de Abarrotería; 
+            luego para el año <strong>2013</strong> incorporamos productos de ferretería y todo comienza por la necesidad de los clientes de adquirir 
+            productos para la construcción y que desde luego en ese tiempo no los teníamos nosotros gracias a Dios hemos crecido un poco en este 
+            Área y esperamos seguir sirviendo de la mejor manera.
+          </p>
+        </article>
+
+        <!-- Visión -->
+        <article class="card-dark">
+          <h3>👁️ Nuestra Visión</h3>
+          <p>
+            Brindar un servicio a la comunidad en el area de la construccion crecer un dia y ser una de las mejores ferreterias de la zona.
+          </p>
+        </article>
+
+        <!-- Objetivo -->
+        <article class="card-dark">
+          <h3>🎯 Nuestro Objetivo</h3>
+          <p>
+            Nuestro primer objetivo es ofrecer soluciones a los clientes y tratar de ofrecer un buen servicio con precios justos nos esmeramos porque nuestras entregas sean inmediatas con responsabilidad siempre guiados por nuestro señor Jesucristo.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo de Productos con TODOS los productos integrados -->
+  <section class="section" id="catalogo">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Catálogo Completo de Productos</h2>
+        <p class="section-subtitle">Todos los materiales y herramientas oficiales integrados directamente para su consulta</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="search-filter-box">
+        <!-- Buscador -->
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Buscar por nombre o descripción...">
+          <button type="button">Buscar</button>
+        </div>
+
+        <!-- Botones de Categorías -->
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="construccion">Construcción</button>
+          <button class="filter-btn" data-filter="herramientas-electricas">Herramientas Eléctricas</button>
+          <button class="filter-btn" data-filter="herramientas-manuales">Herramientas Manuales</button>
+          <button class="filter-btn" data-filter="fontaneria">Fontanería y Plomería</button>
+          <button class="filter-btn" data-filter="pintura">Pintura y Acabados</button>
+          <button class="filter-btn" data-filter="seguridad">Seguridad Industrial</button>
+          <button class="filter-btn" data-filter="electricidad">Electricidad</button>
+          <button class="filter-btn" data-filter="cerrajeria">Cerrajería y Fijación</button>
+          <button class="filter-btn" data-filter="jardineria">Agricultura y jardineria</button>
+          <button class="filter-btn" data-filter="automotriz">Automotriz</button>
+		  <button class="filter-btn" data-filter="ceramica">Ceramicas</button>
+		  <button class="filter-btn" data-filter="tornilleria">Tornillerias</button>
+		  <button class="filter-btn" data-filter="metales">Estructura Metalica</button>
+		  <button class="filter-btn" data-filter="hogar">Hogar</button>
+        </div>
+      </div>
+
+      <!-- Cuadrícula con TODOS los productos de la tabla del documento -->
+      <div class="products-grid" id="productsGrid">
+
+        <!-- 1 -->
+        <article class="product-card" data-category="herramientas-electricas">
+          <div class="product-img-wrap">
+            <span class="product-badge">Herramientas Eléctricas</span>
+            <img src="IMG/Taladro/atornillador-inalambrico-Truper.png" alt="Taladro/Atornillador inalámbrico Truper 20 v (con batería de ion Litio)" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Taladro/Atornillador inalámbrico Truper 20 v (con batería de ion Litio)</h3>
+            <p class="product-desc">Es una herramienta eléctrica portátil inalámbrica para realizar trabajos de perforación y atornillado en diversos materiales como madera, metal o plástico.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Taladro/Atornillador%20inalambrico%20Truper%2020%20v" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="product-card" data-category="construccion">
+          <div class="product-img-wrap">
+            <span class="product-badge">Construcción</span>
+            <img src="IMG/Carretilla-concha de metal-truper.png" alt="Carretilla/con concha de metal truper" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Carretilla/con concha de metal truper</h3>
+            <p class="product-desc">Capacidad y estructura: Concha de color naranja, Una rueda delantera neumática, diseñada para soportar cargas pesadas y trabajos duros.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Carretilla/con%20concha%20de%20metal%20truper" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="product-card" data-category="jardineria">
+          <div class="product-img-wrap">
+            <span class="product-badge">piocha</span>
+            <img src="IMG/Piocha- (zapapico o Pico).png" alt="Piocha (zapapico o Pico)" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Piocha (zapapico o Pico)</h3>
+            <p class="product-desc">Es una herramienta manual de excavación para romper terrenos duros o rocosos, cavar Zanjas y remover raíces, construcción, agricultura y jardinería.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Piocha%20(zapapico%20o%20Pico)" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="product-card" data-category="pintura">
+          <div class="product-img-wrap">
+            <span class="product-badge">Pintura</span>
+            <img src="IMG/Rodillo-pintar.png" alt="Rodillo para pintar/maneral ergonómico" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Rodillo para pintar/maneral ergonómico</h3>
+            <p class="product-desc">Un rodillo utilizado para aplicar pintura de manera rápida y uniforme en paredes, techos y diferentes superficies.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Rodillo%20para%20pintar" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="product-card" data-category="pintura">
+          <div class="product-img-wrap">
+            <span class="product-badge">Pintura</span>
+            <img src="IMG/Brocha-para-pintar.png" alt="Brocha para pintar de marca Pretul." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Brocha para pintar de marca Pretul.</h3>
+            <p class="product-desc">Es una herramienta manual para aplicar pintura, realizar retoques y dar acabados uniformes en paredes, puertas, etc.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Brocha%20para%20pintar%20Pretul" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="product-card" data-category="jardineria">
+          <div class="product-img-wrap">
+            <span class="product-badge">botas</span>
+            <img src="IMG/Botas-industriales-hule.png" alt="Botas industriales de hule/ PVC" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Botas industriales de hule/ PVC</h3>
+            <p class="product-desc">Es un calzado de protección impermeable diseñado para proteger los pies y las parte bajas de las piernas contra el agua, lodo, superficies húmedas en trabajos: construcción, agricultura, jardinería e industria en general.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Botas%20industriales%20de%20hule" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">Herramientas Manuales</span>
+            <img src="IMG/Cinta-metrica.png" alt="Cinta métrica / Flexómetro de 3m x 16 mm." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cinta métrica / Flexómetro de 3m x 16 mm.</h3>
+            <p class="product-desc">Una herramienta manual de medición precisa indispensable para trabajos de carpintería, construcción y uso doméstico en general.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Cinta%20metrica" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">Herramientas Manuales</span>
+            <img src="IMG/Serucho-de-mano.png" alt="Serrucho de mano" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Serrucho de mano</h3>
+            <p class="product-desc">una herramienta manual de corte diseñada para realizar cortes precisos y limpio en madera y sus derivados en trabajos de carpintería, construcción.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Serrucho%20de%20mano" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="product-card" data-category="herramientas-electricas">
+          <div class="product-img-wrap">
+            <span class="product-badge">Herramientas Eléctricas</span>
+            <img src="IMG/Kit-de-batería-y-cargador-ingco.png" alt="Kit de batería y cargador ingco 20v" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Kit de batería y cargador ingco 20v (2 baterías de 4.0 Ah cargador rápido de 4A)</h3>
+            <p class="product-desc">Kit de alimentación para la línea de herramientas inalámbricas de la plataforma 20v de la marca encono, diseño para proveer energía de larga duración y recarga rápidas.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Kit%20de%20bateria%20y%20cargador%20ingco" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 10 -->
+        <article class="product-card" data-category="herramientas-electricas">
+          <div class="product-img-wrap">
+            <span class="product-badge">Herramientas Eléctricas</span>
+            <img src="IMG/Sopladora-aspiradora-eléctrica-(Brickell).png" alt="Sopladora/Aspiradora eléctrica. (Brickell)" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Sopladora/Aspiradora eléctrica. (Brickell)</h3>
+            <p class="product-desc">Es una herramienta eléctrica portátil de doble función para soplar y aspirar polvo, hojas y residuos en el hogar o taller.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Sopladora/Aspiradora%20electrica%20Brickell" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 11 -->
+        <article class="product-card" data-category="herramientas-electricas">
+          <div class="product-img-wrap">
+            <span class="product-badge">Herramientas Eléctricas</span>
+            <img src="IMG/Rotomartillo- Truper.png" alt="Rotomartillo de 1/2'' (13 mm Truper)" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Rotomartillo de 1/2" (13 mm Truper)</h3>
+            <p class="product-desc">Una herramienta eléctrica para perforar materiales resistentes como concreto, mampostería, acero y madera, con funciones de taladro convencional y percusión</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Rotomartillo%20Truper" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 12 -->
+        <article class="product-card" data-category="cerrajeria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Cerrajería</span>
+            <img src="IMG/Bisagra-acero.png" alt="Bisagra de acero-(modelo BI433AB)" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Bisagra de acero-(modelo BI433AB)</h3>
+            <p class="product-desc">Es un herraje de articulación diseñado para la instalación y el soporte de puertas de madera o metal.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Bisagra%20de%20acero" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 13 -->
+        <article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Electricidad</span>
+            <img src="IMG/Extensión-electrica-brickel.png" alt="Extensión eléctrica de uso rudo 15 m Brickell" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Extensión eléctrica de uso rudo 15 m Brickell</h3>
+            <p class="product-desc">Cable de extensión de 15m diseñado para llevar energía a herramientas y equipos en talleres, hogar y construcción.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Extension%20electrica%20Brickell" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 14 -->
+        <article class="product-card" data-category="pintura">
+          <div class="product-img-wrap">
+            <span class="product-badge">Pintura</span>
+            <img src="IMG/Barnis-madera-secado-rapido.png" alt="Barnis para madera secado rápido" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Barnis para madera secado rápido</h3>
+            <p class="product-desc">Recubrimiento protector y decorativo para madera, que combina tinte, sellador y acabado en un solo producto. Marca: madetec</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Barniz%20para%20madera" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 15 -->
+        <article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">Herramientas Manuales</span>
+            <img src="IMG/Cierra-de-mano.png" alt="Cierra de mano" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cierra de mano</h3>
+            <p class="product-desc">Herramienta manual de corte diseñada para metales, plásticos, tuvo de PVC y otros materiales regidos en trabajo de plomería y taller de construcción</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Sierra%20de%20mano" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 16 -->
+        <article class="product-card" data-category="pintura">
+          <div class="product-img-wrap">
+            <span class="product-badge">Pintura</span>
+            <img src="IMG/Kit-rodillos.png" alt="Kit de rodillos" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Kit de rodillos</h3>
+            <p class="product-desc">Set completo de pintura diseñado para retoque, detalles y acabado en aria reducidas con pinturas base agua o esmalte</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Kit%20de%20rodillos" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 17 -->
+        <article class="product-card" data-category="jardineria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Jardinería</span>
+            <img src="IMG/Manguera-reforzada-jardin.png" alt="Manguera reforzada para jardín" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Manguera reforzada para jardín</h3>
+            <p class="product-desc">Es una manguera flexible diseñada para el riesgo de jardines, césped, áreas verde y labores de limpieza en el hogar.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Manguera%20reforzada%20para%20jardin" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 18 -->
+        <article class="product-card" data-category="pintura">
+          <div class="product-img-wrap">
+            <span class="product-badge">Pintura</span>
+            <img src="IMG/Galon-pintura-esmalte-alquilico.png" alt="Galón de Pintura de esmalte alquídico" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Galón de Pintura de esmalte alquídico</h3>
+            <p class="product-desc">Pintura de esmalte alquílico anticorrosivo y decorativo de alta resistencia, formulada para proteger embellecer superficies interiores y exteriores</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Galon%20de%20Pintura%20esmalte" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 19 -->
+        <article class="product-card" data-category="fontaneria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Fontanería</span>
+            <img src="IMG/Manija-mariposa/llave-pvc.png" alt="Manija de mariposa/llave de paso PVC" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Manija de mariposa/llave de paso PVC</h3>
+            <p class="product-desc">Es un Accesorio de fontanería fabricado en PVC diseñado para regular o interrumpir el flujo de agua en tuberías hidráulicas</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Manija%20de%20mariposa%20llave%20PVC" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 20 -->
+        <article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">Herramientas Manuales</span>
+            <img src="IMG/Mazo-acero-martillo.png" alt="Mazo de acero/Martillo" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Mazo de acero/Martillo</h3>
+            <p class="product-desc">Herramienta manual de impacto para trabajos pesados de golpeteo, demolición ligera, corte de cinceles y asentamiento de materiales de construcción y albañilería.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Mazo%20de%20acero/Martillo" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 21 -->
+        <article class="product-card" data-category="seguridad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Seguridad</span>
+            <img src="IMG/Casco-construcción.png" alt="Casco de protección industrial" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Casco de protección industrial</h3>
+            <p class="product-desc">Es un equipó de protección personal para resguarda la cabeza contra impactos de objetos en caídas, golpes en entornos de construcción.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Casco%20de%20proteccion%20industrial" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 22 -->
+        <article class="product-card" data-category="herramientas-electricas">
+          <div class="product-img-wrap">
+            <span class="product-badge">Herramientas Eléctricas</span>
+            <img src="IMG/Cierra-circular.png" alt="Cierra Circular" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cierra Circular</h3>
+            <p class="product-desc">Herramienta eléctrica portátil diseñada para realizar cortes rectos, longitudinales, trasversales y en bisel en madera y en construcción y carpintería.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Sierra%20Circular" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 23 -->
+        <article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">Herramientas Manuales</span>
+            <img src="IMG/Martillo-acero.png" alt="Martillo de acero" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Martillo de acero</h3>
+            <p class="product-desc">Es una herramienta manual en construcción, diseñada para clavar y extraer clavos con facilidad y precisión.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Martillo%20de%20acero" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 24 -->
+        <article class="product-card" data-category="herramientas-electricas">
+          <div class="product-img-wrap">
+            <span class="product-badge">Herramientas Eléctricas</span>
+            <img src="IMG/Taladro-percutor-rotomartillo.png" alt="Taladro percutor/rotomartillo" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Taladro percutor/rotomartillo</h3>
+            <p class="product-desc">Equipo electro portátil de perforación para mampostería, bloques, metal y madera, optimizando para jornadas de trabajo continuo. Marca: Tools</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Taladro%20percutor/rotomartillo" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 25 -->
+        <article class="product-card" data-category="fontaneria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Fontanería</span>
+            <img src="IMG/Llave-grifo-metalico.png" alt="Llave o grifo metálico" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Llave o grifo metálico</h3>
+            <p class="product-desc">Es un accesorio de fontanería para exteriores e interiores diseñados para el control y suministro de agua corrientes en patios, jardines, lavanderos y áreas de servicios.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Llave%20o%20grifo%20metalico" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 26 -->
+        <article class="product-card" data-category="fontaneria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Fontanería</span>
+            <img src="IMG/Válvula-compuerta-bronce.png" alt="Válvula de compuerta de bronce de ¾” (200 WOG)" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Válvula de compuerta de bronce de ¾” (200 WOG)</h3>
+            <p class="product-desc">Es una válvula de fontanería, diseñada para abrir o cerra de forma gradual el paso de fluidos en tuberías de aguas.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Valvula%20de%20compuerta%20de%20bronce" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 27 -->
+        <article class="product-card" data-category="seguridad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Seguridad</span>
+            <img src="IMG/Gafas-oscuras-protección-industrial.png" alt="Gafas oscuras de protección industrial." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Gafas oscuras de protección industrial.</h3>
+            <p class="product-desc">Es un equipo de protección ocular diseñado para resguardar la visita de chispas, esquiarlas, partículas y protección contra el deslumbramiento solar en trabajos.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Gafas%20oscuras%20de%20proteccion" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 28 -->
+        <article class="product-card" data-category="cerrajeria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Cerrajería</span>
+            <img src="IMG/Candado-acero-laminado.png" alt="Candado de acero laminado de 50 mm" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Candado de acero laminado de 50 mm</h3>
+            <p class="product-desc">Es un dispositivo de seguridad de alta resistencia para proteger portones, bodegas, cortinas metálicas, cajas de herramientas y más.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Candado%20de%20acero%20laminado" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 29 -->
+        <article class="product-card" data-category="pintura">
+          <div class="product-img-wrap">
+            <span class="product-badge">Pintura</span>
+            <img src="IMG/Diluyente-epoxico.png" alt="Diluyente Epóxico" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Diluyente Epóxico</h3>
+            <p class="product-desc">Es un solvente químico diseñado especialmente para diluir pinturas, barnices y productos de base epódica. Marca: Dideval</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Diluyente%20Epoxico" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 30 -->
+        <article class="product-card" data-category="automotriz">
+          <div class="product-img-wrap">
+            <span class="product-badge">Gas</span>
+            <img src="IMG/Chimbo-gas-valvula-(POL).png" alt="Chimbo de gas de válvula (POL)" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Chimbo de gas de válvula (POL)</h3>
+            <p class="product-desc">Es un recipiente metálico a presión diseñado para el almacenamiento, transporte y suministro seguro de gas, usos domésticos y comercial.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Chimbo%20de%20gas%20POL" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 31 -->
+        <article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Electricidad</span>
+            <img src="IMG/Regleta-electrica-flauta.png" alt="Regleta eléctrica / flauta" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Regleta eléctrica / flauta</h3>
+            <p class="product-desc">Dispositivo de distribución eléctrica diseñado para conectar múltiples aparatos de manera simultánea a una sola toma de corriente. Marca: volteck</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Regleta%20electrica%20flauta" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 32 -->
+        <article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Electricidad</span>
+            <img src="IMG/Toma-doble-con-Interruptor.png" alt="Toma doble con Interruptor." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Toma doble con Interruptor.</h3>
+            <p class="product-desc">Es un accesorio de pared que combina en una sola pieza dos enchufes para conectar aparatos eléctricos y un interruptor para encender o apagar la luz de habitación. Marca: Troen</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Toma%20doble%20con%20Interruptor" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 33 -->
+        <article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Electricidad</span>
+            <img src="IMG/Protector-voltaje-switch-Brickell.png." alt="Protector de voltaje con switch Brickell." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Protector de voltaje con switch Brickell.</h3>
+            <p class="product-desc">Dispositivo electrónico de protección que resguarda electrodomésticos de hasta 4,400 w (20A/120V) contra variaciones de voltaje, luces LED.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Protector%20de%20voltaje%20Brickell" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 34 -->
+        <article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Electricidad</span>
+            <img src="IMG/Ventilador-techo industrial-Orion-(5 velocidades).png" alt="Ventilador de techo industrial Orion de (5 velocidades)" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Ventilador de techo industrial Orion de (5 velocidades)</h3>
+            <p class="product-desc">Es un equipo de climatización de uso residencial, comercial o industrial ligero, diseñado para refrescar en espacios amplios gracias a sus 3 aspas de gran alcance.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Ventilador%20de%20techo%20Orion" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 35 -->
+        <article class="product-card" data-category="automotriz">
+          <div class="product-img-wrap">
+            <span class="product-badge">Fijación</span>
+            <img src="IMG/Correa-amarre-trinquete-(3”x10m).png" alt="Correa de amarre con trinquete (3”x10m)" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Correa de amarre con trinquete (3”x10m)</h3>
+            <p class="product-desc">Es un sistema de sugestión de alta resistencia diseñado para asegurar, sujetar estabilizar cargas pesadas durante el transporte en camiones.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Correa%20de%20amarre%20con%20trinquete" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 36 -->
+        <article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Electricidad</span>
+            <img src="IMG/Regleta-eléctrica-8-corriente-(Modelo VT-1003).png" alt="Regleta eléctrica de 8 tomas de corriente (Modelo VT-1003)" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Regleta eléctrica de 8 tomas de corriente (Modelo VT-1003)</h3>
+            <p class="product-desc">Es un multicontacto eléctrico compacto con 8 salidas de corriente, facilitando la conexión simultánea de múltiples equipos en oficinas, escritorios o centros de entretenimiento.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Regleta%20electrica%208%20tomas" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 37 -->
+        <article class="product-card" data-category="herramientas-electricas">
+          <div class="product-img-wrap">
+            <span class="product-badge">Herramientas Eléctricas</span>
+            <img src="IMG/Amoladora-Esmeriladora-angular industrial.png" alt="Amoladora / Esmeriladora angular industrial." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Amoladora / Esmeriladora angular industrial.</h3>
+            <p class="product-desc">herramienta eléctrica de gran potencia diseñada para trabajos pesados de corte, desbastes y pulido en metales, de construcción Marca: INGCO</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Amoladora%20Esmeriladora%20Ingco" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 38 -->
+        <article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">Herramientas Manuales</span>
+            <img src="IMG/Cinturón-portaherramientas-piel-carnaza-Truper-(13 bolsillos).png" alt="Cinturón portaherramientas de piel de carnaza Truper (13 bolsillos)." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cinturón portaherramientas de piel de carnaza Truper (13 bolsillos).</h3>
+            <p class="product-desc">Es un organizador portátil que permite llevar herramientas manuales, clavos, tornillos y accesorios al alcance de la mano durante el trabajo en obra o taller.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Cinturon%20portaherramientas%20Truper" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 39 -->
+        <article class="product-card" data-category="pintura">
+          <div class="product-img-wrap">
+            <span class="product-badge">Pintura</span>
+            <img src="IMG/Tambo-de-pintura.png" alt="Tambo-de-pintura" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Tambo de pintura</h3>
+            <p class="product-desc">Pintura sintética a base de aceite diseñada para ofrecer un acabado de alto brillo, elevada adherencia y máxima protección sobre diversas superficies, tanto en interiores como en exteriores.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Esmalte%20Alquidico%20Corona%20DURA" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 40 -->
+        <article class="product-card" data-category="seguridad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Seguridad</span>
+            <img src="IMG/Guantes-carnaza-reforzados-operador-Truper.png." alt="Guantes de carnaza reforzados para operador Truper." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Guantes de carnaza reforzados para operador Truper.</h3>
+            <p class="product-desc">Son elementos de protección personal diseñados para proteger las manos contra abrasión, astillas, fricción, cortaduras leves durante labores pesadas en construcción.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Guantes%20de%20carnaza%20Truper" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 41 -->
+        <article class="product-card" data-category="seguridad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Seguridad</span>
+            <img src="IMG/Rollo-alambre-púas-galvanizado.png" alt="Rollo de alambre de púas galvanizado." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Rollo de alambre de púas galvanizado.</h3>
+            <p class="product-desc">Material de seguridad, diseñado para cercar terrenos, proteger propiedades y evitar el paso de intrusos o ganado.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Rollo%20de%20alambre%20de%20puas" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 42 -->
+        <article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Electricidad</span>
+            <img src="IMG/Foco-LED-Tecnolite-alta-potencia-30W.png" alt="Foco LED Tecnolite de alta potencia 30W." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Foco LED Tecnolite de alta potencia 30W.</h3>
+            <p class="product-desc">Lámpara LED diseñada para iluminar espacios amplios como talleres, cocheras, comercios o bodegas, ofreciendo un alto rendimiento con un consumo reducido de energía.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Foco%20LED%20Tecnolite%2030W" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 43 -->
+        <article class="product-card" data-category="seguridad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Seguridad</span>
+            <img src="IMG/Conjunto-impermeable-PVC-Pretul.png" alt="Conjunto impermeable." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Conjunto impermeable.</h3>
+            <p class="product-desc">Traje de protección contra la lluvia de peso ligero, diseñado para mantener al usuario seco y cómodo durante labores al aire libre o en condiciones climáticas adversas.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Conjunto%20impermeable%20Pretul" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 44 -->
+        <article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">Herramientas Manuales</span>
+            <img src="IMG/Cuchara-albañil-tipo-gota.png" alt="Cuchara de albañil tipo gota" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cuchara de albañil tipo gota</h3>
+            <p class="product-desc">herramienta manual diseñada para cargar, transportar, aplicar y nivelar pulido o cemento durante la colocación de ladrillos, bloques y trabajos generales de mampostería.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Cuchara%20de%20albanil" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 45 -->
+        <article class="product-card" data-category="seguridad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Seguridad</span>
+            <img src="IMG/Guantes-de-piel-cabra-Truper.png" alt="Guantes de piel de cabra Truper." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Guantes de piel de cabra Truper.</h3>
+            <p class="product-desc">Guantes de protección personal diseñados con piel suave de alta calidad, ofrecen un excelente nivel de tacto, flexibilidad.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Guantes%20de%20piel%20de%20cabra" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 46 -->
+        <article class="product-card" data-category="fontaneria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Fontanería</span>
+            <img src="IMG/Bomba-periférica-agua-Truper.png" alt="Bomba periférica para agua Truper" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Bomba periférica para agua Truper</h3>
+            <p class="product-desc">Bomba de agua de alta presión diseñada para el bombeo de instalaciones domésticas, elevación a cisternas y pequeños sistemas de riego.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Bomba%20periferica%20Truper" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 47 -->
+        <article class="product-card" data-category="pintura">
+          <div class="product-img-wrap">
+            <span class="product-badge">Pintura</span>
+            <img src="IMG/Pinturas-aerosol-Acuario.png." alt="Pinturas de aerosol Acuario" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Pinturas de aerosol Acuario</h3>
+            <p class="product-desc">De esmaltes acrílicos en aerosol de secado rápido y alta adherencia, diseñados para trabajos decorativos, industriales.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Pinturas%20de%20aerosol%20Acuario" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 48 -->
+        <article class="product-card" data-category="cerrajeria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Cerrajería</span>
+            <img src="IMG/Bisagra-de-acero.png" alt="Bisagra de acero" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Bisagra de acero</h3>
+            <p class="product-desc">diseñadas para la instalación y soporte de puertas de madera o metálicas en proyectos residenciales y comerciales.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Bisagra%20de%20acero" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 49 -->
+        <article class="product-card" data-category="tornilleria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Fijación</span>
+            <img src="IMG/Clavos-acero.png" alt="Clavos de acero" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Clavos de acero</h3>
+            <p class="product-desc">Insumo de sujeción fabricado en acero de alta resistencia, diseñado para brindar fijaciones firmes en proyectos de carpintería, construcción general</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20acero" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 50 -->
+        <article class="product-card" data-category="cerrajeria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Adhesivos</span>
+            <img src="IMG/Adhesivo-montaje-(truper).png" alt="Adhesivo de montaje (truper)" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Adhesivo de montaje (truper)</h3>
+            <p class="product-desc">De multiuso con agarre inmediato y alta fuerza de pegado, diseñado para montar objeto sin necesidad de taladrar ni usar clavos ni tornillos.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Adhesivo%20de%20montaje%20Truper" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 51 -->
+        <article class="product-card" data-category="cerrajeria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Cerrajería</span>
+            <img src="IMG/Serradura-pomo-(negro).png" alt="Serradura de pomo para exteriores(negro)" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Serradura de pomo para exteriores(negro)</h3>
+            <p class="product-desc">Serradura cilíndrica de pomos diseñadas para puertas principales o de acceso exterior, combinando seguridad y alta resistencias con un acabado moderno en color negro.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Cerradura%20de%20pomo%20negra" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 52 -->
+        <article class="product-card" data-category="tornilleria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Fijación</span>
+            <img src="IMG/Abrazaderas-metálicas-uñas-para-tubería.png" alt="Abrazaderas metálicas de uñas para tubería" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Abrazaderas metálicas de uñas para tubería</h3>
+            <p class="product-desc">Diseñado para sujetar y asegurar tubos rígidos, Conduit o manguera sobre paredes, techo superficie de mampostería o madera.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Abrazaderas%20metalicas" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 53 -->
+        <article class="product-card" data-category="jardineria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Jardinería</span>
+            <img src="IMG/Cadena-para-motosierra.png" alt="Cadena para motosierra" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cadena para motosierra</h3>
+            <p class="product-desc">Cadena de repuesto, diseñada para brindar cortes rápidos, precisos y limpios en labores de tala, poda corte de madera.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Cadena%20para%20motosierra" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 54 -->
+        <article class="product-card" data-category="herramientas-electricas">
+          <div class="product-img-wrap">
+            <span class="product-badge">Herramientas Eléctricas</span>
+            <img src="IMG/Disco-de-cepillo metálico-Brickelll.png" alt="Disco de cepillo metálico 4 ½” Brickell" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Disco de cepillo metálico 4 ½” Brickell</h3>
+            <p class="product-desc">Accesorio para esmeriladora angular diseñado para trabajos pesado de limpieza, desbaste, remoción de oxido, pintura barniz y rebabas en superficies metálicos y soldadura.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Disco%20de%20cepillo%20metalico" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 55 -->
+        <article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Electricidad</span>
+            <img src="IMG/Lampara-halógeno-volteck.png" alt="Lampara halógeno 50w volteck." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Lampara halógeno 50w volteck.</h3>
+            <p class="product-desc">Foco halógeno de luz cálida diseñado para brindar una iluminación focalizada y brillante en áreas residenciales o comérciale.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Lampara%20halogeno%20volteck" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 56 -->
+        <article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Electricidad</span>
+            <img src="IMG/Reflector-solar-LED-200w-Yedea.png" alt="Reflector solar LED 200w Yedea." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Reflector solar LED 200w Yedea.</h3>
+            <p class="product-desc">Luminario led de alta potencia para exteriores alimentada por energía solar, diseñada para brindar iluminación eficiente sin consumo de red eléctrica.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Reflector%20solar%20LED" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 57 -->
+        <article class="product-card" data-category="pintura">
+          <div class="product-img-wrap">
+            <span class="product-badge">Pintura</span>
+            <img src="IMG/Rodillo/repuesto-rodillo-poliéster-truper.png" alt="Rodillo / repuesto para rodillo de poliéster truper." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Rodillo / repuesto para rodillo de poliéster truper.</h3>
+            <p class="product-desc">Diseñado para aplicación eficiente de todo tipo de pintura sobre super fieis rugosa semi rugosas, y de al para trabajo.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Repuesto%20rodillo%20Truper" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 58 -->
+        <article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Electricidad</span>
+            <img src="IMG/Foco-ahorrador-volteck.png" alt="Foco ahorrador volteck." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Foco ahorrador volteck.</h3>
+            <p class="product-desc">Foco ahorrador de alta potencia diseñado para brindar una limitación blanca intensa o clara en espacio amplio que requiere una gran visibilidad</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Foco%20ahorrador%20volteck" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 59 -->
+        <article class="product-card" data-category="Tornillerias">
+          <div class="product-img-wrap">
+            <span class="product-badge">Fijación</span>
+            <img src="IMG/Caja-de-clavo-de-concreto-Bricker.png" alt="Caja de clavo de concreto Bricker" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Caja de clavo de concreto Bricker</h3>
+            <p class="product-desc">diseñados para la fijación firme y segura de estructuras y soportes en concreto, mampostería y bloques.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 60 -->
+		<article class="product-card" data-category="fontaneria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Giferia</span>
+            <img src="IMG/Grifo-lavamanos.png" alt="Grifo para lavamanos" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Grifos para lavamanos</h3>
+            <p class="product-desc">Diseño curvo y dos manijas transparentes para controlar el flujo y la temperatura del agua..</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- 61 -->
+		<article class="product-card" data-category="pintura">
+          <div class="product-img-wrap">
+            <span class="product-badge">pistola de pintar</span>
+            <img src="IMG/Pistola-para-pintar-eléctrica-con-compresor.png" alt="Pistola para pintar eléctrica con compresor" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Pistola para pintar eléctrica con compresor</h3>
+            <p class="product-desc">Diseñada para la aplicación uniforme de pinturas, esmaltes y barnices en proyectos de acabado y remodelación, ofreciendo un rociado preciso.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 62 -->
+		<article class="product-card" data-category="hogar">
+          <div class="product-img-wrap">
+            <span class="product-badge">Utensilios de limpieza</span>
+            <img src="IMG/Escoba.png" alt="Escoba" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Escoba</h3>
+            <p class="product-desc">diseñada para facilitar la limpieza profunda y el mantenimiento para hogar.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 63 -->
+		<article class="product-card" data-category="jardineria">
+          <div class="product-img-wrap">
+            <span class="product-badge">equipo de fumigación</span>
+            <img src="IMG/Fumigadora-modo-mochila.png" alt="Fumigadora modo de mochila" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Fumigadora modo de mochila</h3>
+            <p class="product-desc">Diseño tipo mochila con tanque de alta capacidad, diseñada para aplicación uniforme y eficiente fertilizantes, insecticidas, nervosidad y de festinaste y jardinería.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 64 -->
+		<article class="product-card" data-category="Electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">protección electrica</span>
+            <img src="IMG/Protector-de-voltaje.png" alt="Protector de voltaje" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Protector de voltaje</h3>
+            <p class="product-desc">Dispositivo de protección eléctrica para resguardar equipos electrodomésticos y electrónicos contra variaciones de voltaje, descarga de energía.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 65 -->
+		<article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">herramienta para electricista</span>
+            <img src="IMG/Cuchillo-navaja-curva.png" alt="Cuchillo o navaja curva" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cuchillo o navaja curva</h3>
+            <p class="product-desc">Herramienta de corte especializadas para trabajos eléctricos y de liniero, diseñada para corte de cables y mangueras eléctricas.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 66 -->
+		<article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">remachar</span>
+            <img src="IMG/Remachadora-profesional.png" alt="Remachadora profesional" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Remachadora profesional (4 boquillas truper)</h3>
+            <p class="product-desc">Herramienta manual diseñada para la fijación rápida y segura de la mina, perfiles, herrería y piezas metálicas o plásticas mediante remaches ciegos de aluminio.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 67 -->
+		<article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">remacho</span>
+            <img src="IMG/Remachador-manual.png" alt="Remachador manual" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Remachador manual</h3>
+            <p class="product-desc">Herramienta ligera para bricolaje y reparaciones caseras ocasionales.Modelo petrul.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 68 -->
+		<article class="product-card" data-category="automotriz">
+          <div class="product-img-wrap">
+            <span class="product-badge">Aflojado</span>
+            <img src="IMG/Aflojado-super-penetrante-multiuso.png" alt="Aflojado super penetrante multiuso" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Aflojado super penetrante multiuso</h3>
+            <p class="product-desc">diseñado para penetrar rápidamente, liberar piezas oxidadas o trabadas, desplazar de humildad y eliminar ruidos de fricción.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 68 -->
+		<article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">esquleto</span>
+            <img src="IMG/Esqueleto-de-pistola-silicona.png" alt="Esqueleto de pistola silicona" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Esqueleto de pistola silicona</h3>
+            <p class="product-desc">Pistola manual de esqueleto metálico deseñada para la aplicación uniforme y continua de cartuchos estándar de silicona, selladores y adhesivos.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 69 -->
+		<article class="product-card" data-category="ceramica">
+          <div class="product-img-wrap">
+            <span class="product-badge">adhesivos</span>
+            <img src="IMG/Adhesivo-para-pisos-cerámicos.png" alt="Adhesivo para pisos cerámicos" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Adhesivo para pisos cerámicos</h3>
+            <p class="product-desc">Mortero adhesivo, diseñado para la instalación rápida y segura de baldosas cerámicas y azulejos sobre pisos y muros. Marca Weld bond.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 70 -->
+		<article class="product-card" data-category="ceramica">
+          <div class="product-img-wrap">
+            <span class="product-badge">adhesivos</span>
+            <img src="IMG/Weldbond-ultra-color.png" alt="Weldbond ultra color" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Weldbond ultra color</h3>
+            <p class="product-desc">Mortero especializado para el relleno en revestimientos cerámicos y azulejos, deseñado para brindar acabados firmes, uniformes y duraderos.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 71 -->
+		<article class="product-card" data-category="herramienta-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">atornillado</span>
+            <img src="IMG/Destornillador-desarmador-plano.png" alt="Destornillador desarmador plano" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Destornillador desarmador plano</h3>
+            <p class="product-desc">Herramienta manual, diseñada para aplicar torque de forma cómoda y precisa en tornillos de cabeza ranurada/plana.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 72 -->
+		<article class="product-card" data-category="herramientas-electricas">
+          <div class="product-img-wrap">
+            <span class="product-badge">accesorio</span>
+            <img src="IMG/Disco-copa-diamantado-para-pulir.png" alt="Disco copa diamantado para pulir" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Disco copa diamantado para pulir</h3>
+            <p class="product-desc">Disco diamantado de alta resistencia con diseño tipo copa y segmento turbo, formulado para el desbaste, rectificado y pulido eficiente de granito, concreto, piedra y mampostería.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 73 -->
+		<article class="product-card" data-category="fontaneria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Grifo</span>
+            <img src="IMG/Grifo-de-lavamanos.png" alt="Grifos de lavamanos" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Grifos de lavamanos</h3>
+            <p class="product-desc">Cuenta con un acabado cromado brillante y un diseño clásico de doble manija para controlar el agua fría y caliente de forma independiente .</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 74 -->
+		<article class="product-card" data-category="fontaneria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Codo PVC 90 grado</span>
+            <img src="IMG/Codo-PVC-90-grado.png" alt="Grifos de lavamanos" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Codo PVC90 grado</h3>
+            <p class="product-desc">diseñado paras realizar giros y cambios de dirección en redes de tubería de 3 pulgadas de diámetro .</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 75 -->
+		<article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">iluminación</span>
+            <img src="IMG/Lampara-de-pared-exterior.png" alt="Lampara-de-pared-exterior/farol V-TEG" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Lampara-de-pared-exterior/farol V-TEG</h3>
+            <p class="product-desc">Aplique decorativo tipo farol para pared exterior, diseñado para brindar iluminación elegante y resistente la intemperie .</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 76 -->
+		<article class="product-card" data-category="herramienta-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">corte</span>
+            <img src="IMG/Tijera-para-oficina-hogar.png" alt="Tijera para oficina hogar" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Tijera para oficina hogar</h3>
+            <p class="product-desc">Herramienta manual ideal para cortes limpios en papel, cartulina, cinta y trabajos escolares o de oficina.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 77 -->
+		<article class="product-card" data-category="pintura">
+          <div class="product-img-wrap">
+            <span class="product-badge">rodo</span>
+            <img src="IMG/Repuestos-para-rodillo.png" alt="Repuestos para rodillo" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Repuestos para rodillo</h3>
+            <p class="product-desc">Felpa/Repuesto para rodillo ideal para lograr máxima cobertura y rendimiento de pintura sobre superficies de textura profunda estrecha rugosa.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 78 -->
+		<article class="product-card" data-category="tornilleria">
+          <div class="product-img-wrap">
+            <span class="product-badge">fijación</span>
+            <img src="IMG/Tornillos-Autoperforantes-Cabeza-truss.png" alt="Tornillos Autoperforantes Cabeza truss" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Tornillos Autoperforantes Cabeza truss</h3>
+            <p class="product-desc">Felpa/Fijación metálica con punta de Broca y cabeza ancha, Diseñada para perforar, fijar en perfiles metálicos, Canales de tabla roca y laminas sin necesidad de taladro previo.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 79 -->
+		<article class="product-card" data-category="tornilleria">
+          <div class="product-img-wrap">
+            <span class="product-badge">fijación</span>
+            <img src="IMG/Tornillo-de-ojo-cáncamos-de-rosca.png" alt="Tornillo de ojo cáncamos de rosca" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Tornillo de ojo cáncamos de rosca</h3>
+            <p class="product-desc">Elementos de afijación metálica con extremos en anillo serado y cuerpo auto roscantes, para anclarse firmemente en madera, para colgar o sujetar cables, cuerda y otros objetos.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 80 -->
+		<article class="product-card" data-category="jardineria">
+          <div class="product-img-wrap">
+            <span class="product-badge">corte</span>
+            <img src="IMG/Machete-estándar-Gabilan.png" alt="Machete estándar Gabilan" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Machete estándar (Gabilan)</h3>
+            <p class="product-desc">Herramienta de corte diseñada para limpieza de maleza, Poda de ramas y labores pesadas en el campo, finja o jardín.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 81 -->
+		<article class="product-card" data-category="construccion">
+          <div class="product-img-wrap">
+            <span class="product-badge">construcción</span>
+            <img src="IMG/Cemento-Uno-uso-general.png" alt="Cemento Unom uso general" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cemento Uno uso general</h3>
+            <p class="product-desc">Excelente Resistencia, ideal para todo tipo de obra de construcción civil, residencial y trabajos estructurales de alta calidad y rendimiento.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 82 -->
+		<article class="product-card" data-category="fontaneria">
+          <div class="product-img-wrap">
+            <span class="product-badge">conector</span>
+            <img src="IMG/Conector-rápido-macho-de-la-lacto-solido.png" alt="Conector rápido macho de la lacto solido" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Conector rápido macho de la lacto solido</h3>
+            <p class="product-desc">Conector neumático de acople rápido diseñado para brindar una conexión hermética, rápida y resistente al desgaste herramientas neumáticas, mangueras y accesorios de aires comprimidos.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 83 -->
+		<article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">iluminación</span>
+            <img src="IMG/Linterna-práctica-led.png" alt="Linterna práctica led" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Linterna práctica led </h3>
+            <p class="product-desc">Linterna de mano ligera, de alta resistencia con led de alta intensidad, haz de luz enfocado de largo alcance y batería recargable.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 84 -->
+		<article class="product-card" data-category="pintura">
+          <div class="product-img-wrap">
+            <span class="product-badge">recubrimiento</span>
+            <img src="IMG/Recubrimiento-anti-graba-Mega-ultra.png" alt="Recubrimiento anti-graba Mega ultra" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Recubrimiento anti-graba Mega ultra</h3>
+            <p class="product-desc">Diseñado para proteger chasis, estribos y Guardafangos Contra impactos de Piedras, humedad y corrosión ofreciendo aislamiento térmico y acústico con acabados texturizados.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 85 -->
+		<article class="product-card" data-category="construcción">
+          <div class="product-img-wrap">
+            <span class="product-badge">bloque</span>
+            <img src="IMG/Bloques-de-concreto-Gris.png" alt="Bloques de concreto Gris" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Bloques de concreto Gris</h3>
+            <p class="product-desc">Para constricción y mampostería, para aligerar peso y facilitar paso de instalaciones o refuerzo estructurales, de alta resistencia a la compresión y durabilidad para muros y paredes.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 86 -->
+		<article class="product-card" data-category="jardinreia">
+          <div class="product-img-wrap">
+            <span class="product-badge">biberon</span>
+            <img src="IMG/Biberon-para-alimentación-de-animales.png" alt="Biberon para alimentación de animales" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Biberon para alimentación de animales</h3>
+            <p class="product-desc">Diseñado para la lactancia eficiencia de ganado y cría.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 87 -->
+		<article class="product-card" data-category="pintura">
+          <div class="product-img-wrap">
+            <span class="product-badge">pegamento</span>
+            <img src="IMG/Sellador-de-silicón-Dyolu.png" alt="Sellador de silicón Dyolu" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Sellador de silicón Dyolu</h3>
+            <p class="product-desc">Ideal para sellas juntas uniones en arias húmedas (como fregaderos, ventanas y bañeras).</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 88 -->
+		<article class="product-card" data-category="electrica">
+          <div class="product-img-wrap">
+            <span class="product-badge">conexion electrica</span>
+            <img src="IMG/Pinza-tierra-o-caimane.png" alt="Pinza tierra o caimane" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Pinza tierra o caimane</h3>
+            <p class="product-desc">Diseñado para asegurar una conexión eléctrica firme y asegurar al polo negativo durante los trabajos de soldadura.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 89 -->
+		<article class="product-card" data-category="electrica">
+          <div class="product-img-wrap">
+            <span class="product-badge">instrumento de prueba electrica</span>
+            <img src="IMG/Probador-de-circuito-eléctrico.png" alt="Probador de circuito eléctrico" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Probador de circuito eléctrico</h3>
+            <p class="product-desc">Diseñado para identificar niveles de detención de forma rápida y segura.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 90 -->
+		<article class="product-card" data-category="pintura">
+          <div class="product-img-wrap">
+            <span class="product-badge">pasta</span>
+            <img src="IMG/Masía-plástica.png" alt="Masía plástica" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Masía plástica</h3>
+            <p class="product-desc">Diseñada para nivelar y reparar imperfecciones superficies metal, madera y concreto.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 90 -->
+		<article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">para escavacion</span>
+            <img src="IMG/Pico-Pequeña-de-acero-Forjado.png" alt="Pico Pequeña de acero Forjado" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Pico Pequeña de acero Forjado</h3>
+            <p class="product-desc">Para trabajo de corte y demolición mejor en trabajos específicos.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 91 -->
+		<article class="product-card" data-category="Tornillerias">
+          <div class="product-img-wrap">
+            <span class="product-badge">sujeción</span>
+            <img src="IMG/Ganchos-de-anclaje.png" alt="Ganchos de anclaje" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Ganchos de anclaje</h3>
+            <p class="product-desc">Diseñado para soportar cargas pesadas, colgar elementos estructurales o asegurar voltajes colgantes.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 92 -->
+		<article class="product-card" data-category="automotriz">
+          <div class="product-img-wrap">
+            <span class="product-badge">bateria</span>
+            <img src="IMG/Batería-automotriz.png" alt="Batería automotriz" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Batería automotriz</h3>
+            <p class="product-desc">Diseñada para proporcionar energía de Arranque confiable y rendimiento eléctricos en vehículo.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 93 -->
+		<article class="product-card" data-category="jardineria">
+          <div class="product-img-wrap">
+            <span class="product-badge">maquinaria agricola</span>
+            <img src="IMG/Motosierra-a-gasolina.png" alt="Motosierra a gasolina " loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Motosierra a gasolina </h3>
+            <p class="product-desc">Diseñado Para corte de madera talar y poda exigente.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 94 -->
+		<article class="product-card" data-category="pintura">
+          <div class="product-img-wrap">
+            <span class="product-badge">impermeablizantes</span>
+            <img src="IMG/Impermeabilizante-Azul.png" alt="Impermeabilizante Azul " loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Impermeabilizante Azul </h3>
+            <p class="product-desc">Diseñado para sellar tanque de concreto como pilas y cisternas.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 95 -->
+		<article class="product-card" data-category="construccion">
+          <div class="product-img-wrap">
+            <span class="product-badge">construccion</span>
+            <img src="IMG/Arena.png" alt="Arena " loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Arena </h3>
+            <p class="product-desc">ideal para mezclas de mortero, mampostería, revoques y vaciados de concreto, proporcionando excelente trabajabilidad, cohesión y resistencia estructural en obras civiles.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 96 -->
+		<article class="product-card" data-category="construccion">
+          <div class="product-img-wrap">
+            <span class="product-badge">construccion</span>
+            <img src="IMG/Piedra-triturada-gravilla.png" alt="Piedra triturada (gravilla)" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Piedra triturada (gravilla)</h3>
+            <p class="product-desc">Para construcción, ideal para la elaboración de mezclas de concreto de alta resistencia, cimientos, losas y drenajes, proporcionando estabilidad estructural, excelente compactación y durabilidad en obras civiles.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 97 -->
+		<article class="product-card" data-category="construccion">
+          <div class="product-img-wrap">
+            <span class="product-badge">materiales de contrucion</span>
+            <img src="IMG/Varillas-de-acero-corrugado.png" alt="Varillas-de-acero-corrugado" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Varillas deacero corrugado</h3>
+            <p class="product-desc">diseñadas para el refuerzo estructural de concreto en cimientos, columnas, losas y muros, proporcionando alta resistencia a la tensión, durabilidad y máxima adherencia en obras civiles.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 98 -->
+		<article class="product-card" data-category="metales">
+          <div class="product-img-wrap">
+            <span class="product-badge">Laminas metalicas</span>
+            <img src="IMG/Laminas-metalicas.png" alt="Laminas-metalicas" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Laminas metalicas</h3>
+            <p class="product-desc">Diseñada para la construcción; techado y revestimiento de cubiertas y estructuras en proyecto presidenciales, comerciales e industriales.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 99 -->
+		<article class="product-card" data-category="contruccion">
+          <div class="product-img-wrap">
+            <span class="product-badge">construccion</span>
+            <img src="IMG/Ladrillos-de-arcilla.png" alt="Ladrillos de arcilla." loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Ladrillos de arcilla.</h3>
+            <p class="product-desc">Ideales para la edificación de muros, tabiques y fachadas, ofreciendo alta resistencia a la compresión, gran durabilidad y excelente aislamiento térmico y acústicos.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 100 -->
+		<article class="product-card" data-category="fontaneria">
+          <div class="product-img-wrap">
+            <span class="product-badge">tuberias</span>
+            <img src="IMG/Tubos-de-PVC-blanco-diferentes-diámetros-longitudes.png" alt="Tubos de PVC blanco diferentes diámetros longitudes" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Tubos de PVC blanco diferentes diámetros longitudes</h3>
+            <p class="product-desc">diseñados para sistemas de conducción de agua, desagüe, instalaciones sanitarias o eléctricas, ofreciendo alta resistencia a la corrosión, durabilidad y facilidad de corte e instalación.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 101 -->
+		<article class="product-card" data-category="fontaneria">
+          <div class="product-img-wrap">
+            <span class="product-badge">tuveria</span>
+            <img src="IMG/Codo-de-PVC-blanco-de-45-grados.png" alt="Codo de PVC blanco de 45 grados" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Codo de PVC blanco de 45 grados</h3>
+            <p class="product-desc">Diseñado para sistemas de desagüe e instalaciones sanitarias, ofreciendo cambios de dirección fluidos, alta resistencia a la corrosión y uniones herméticas en redes de tuberías.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 102 -->
+		<article class="product-card" data-category="construccion">
+          <div class="product-img-wrap">
+            <span class="product-badge">construccion</span>
+            <img src="IMG/Cuartones-de-madera.png" alt="Cuartones de madera" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cuartones de madera</h3>
+            <p class="product-desc">Ideales para trabajos de construcción, enfocados en carpintería, y estructuras temporales, ofreciendo buena resistencia para soporte de cargas.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 103 -->
+		<article class="product-card" data-category="fontanería">
+          <div class="product-img-wrap">
+            <span class="product-badge">accesorio de tuberias</span>
+            <img src="IMG/Yee-PVC-DWV-de-75mm-3pulgadas.png" alt="Yee-PVC-DWV-de-(75 mm 3 pulgadas)" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Yee PVC DWV de (75 mm 3 pulgadas)</h3>
+            <p class="product-desc">Utilizados para unir tuberías de agua y desagüe, resistentes a la corrección, duraderos y que garantizan conexiones seguras y sin fugas.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 104 -->
+		<article class="product-card" data-category="fontanería">
+          <div class="product-img-wrap">
+            <span class="product-badge">tuberias</span>
+            <img src="IMG/Tubos-cortos-de-PVC-blanco.png" alt="Tubos cortos de PVC blanco" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Tubos cortos de PVC blanco</h3>
+            <p class="product-desc">diseñado para la unión lineal de tuberías en sistemas de conducción de agua e instalaciones hidráulicas, ofreciendo un ajuste hermético, resistencia a la corrosión y fácil instalación.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 105 -->
+		<article class="product-card" data-category="herranientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">medicion</span>
+            <img src="IMG/Nivel-Manual.png" alt="Nivel-Manual" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Nivel Manual</h3>
+            <p class="product-desc">Es una herramienta manual de precisión diseñada para verificar la alineación vertical.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 106 -->
+		<article class="product-card" data-category="seguridad">
+          <div class="product-img-wrap">
+            <span class="product-badge">protección</span>
+            <img src="IMG/Rodillera-de-protección-Industrial.png" alt="Rodillera-de-protección-Industrial" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Rodillera de protección Industrial</h3>
+            <p class="product-desc">diseñadas para trabajos pesados de construcción, albañilería e instalación de pisos, ofreciendo alta resistencia a impactos.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 107 -->
+		<article class="product-card" data-category="cerrejeria">
+          <div class="product-img-wrap">
+            <span class="product-badge">sistema de seguridad</span>
+            <img src="IMG/Candado Italiano.png" alt="Candado Italiano" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Candado Italiano</h3>
+            <p class="product-desc">diseñado para asegurar puertas, rejas, portones y cadenas, ofreciendo máxima resistencia al corte, mecanismo de alta seguridad y garantía de por vida.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 108 -->
+		<article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">Lampara</span>
+            <img src="IMG/Lampara-solar-con-cámara-de-seguridad.png" alt="Lampara solar con cámara de seguridad" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Lampara solar con cámara de seguridad</h3>
+            <p class="product-desc">Diseñada para la iluminación exterior y monitoreo remoto de seguridad en hogares.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 109 -->
+		<article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">molino</span>
+            <img src="IMG/Molino-Manual.png" alt="Molino Manual" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Molino Manual</h3>
+            <p class="product-desc">Diseñado para la molienda fina de maíz, café, queso y especias en el hogar .</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 110 -->
+		<article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">camara</span>
+            <img src="IMG/Arbotante-de-seguridad-con-censor-luz-de-movimiento.png" alt="Arbotante de seguridad con censor luz de movimiento" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Arbotante de seguridad con censor luz de movimiento</h3>
+            <p class="product-desc">Para iluminación perimetral en interiores y exteriores.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 111 -->
+		<article class="product-card" data-category="herramientas-electricas">
+          <div class="product-img-wrap">
+            <span class="product-badge">cautin</span>
+            <img src="IMG/Cautín-tipo-lapiz-para-trabajo-pesado.png" alt="Cautín-tipo-lapiz-para-trabajo-pesado" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cautín tipo lapiz para trabajo pesado</h3>
+            <p class="product-desc">diseñado para soldadura eléctrica en trabajos de electrónica y reparaciones.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 112 -->
+		<article class="product-card" data-category="jardineria">
+          <div class="product-img-wrap">
+            <span class="product-badge">Rastrillo</span>
+            <img src="IMG/Rastrillo-de-jardineria.png" alt="Rastrillo de jrdineria" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Rastrilo de jardineria</h3>
+            <p class="product-desc">diseñado para perforar en concreto, mampostería, metal y madera.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 113 -->
+		<article class="product-card" data-category="herramientas-electricas">
+          <div class="product-img-wrap">
+            <span class="product-badge">camara</span>
+            <img src="IMG/Taladro-percutor-Industral.png" alt="Taladro percutor Industral" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Taladro percutor Industral</h3>
+            <p class="product-desc">Diseñado para perforar en concreto, mampostería, metal y madera.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 114 -->
+		<article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">multimetro</span>
+            <img src="IMG/Multímetro-digital-de-gancho.png" alt="Multímetro digital de gancho" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Multímetro digital de gancho</h3>
+            <p class="product-desc">diseñado para la medición de corriente, voltaje y parámetros eléctricos con alta precisión, ideal para trabajos de mantenimiento eléctrico e industrial.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 115 -->
+		<article class="product-card" data-category="herramientas-electricas">
+          <div class="product-img-wrap">
+            <span class="product-badge">multimetro</span>
+            <img src="IMG/Multímetro-Digital-Ingco.png" alt="Multímetro-Digital-Ingco" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Multímetro-Digital-Ingco</h3>
+            <p class="product-desc">diseñado para la medición precisa de voltaje AC/DC, corriente, resistencia y continuidad con función True RMS y pantalla de 4000 cuentas.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 116 -->
+		<article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">meddicion</span>
+            <img src="IMG/Flexómetro-o-cintametrica.png" alt="Flexómetro o cintametrica" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Flexómetro o cintametrica</h3>
+            <p class="product-desc">ddiseñado para la medición precisa en trabajos de construcción, carpintería y uso doméstico.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 117 -->
+		<article class="product-card" data-category="automatriz">
+          <div class="product-img-wrap">
+            <span class="product-badge">aceite</span>
+            <img src="IMG/Aceite-Multiuso.png" alt="Aceite Multiuso" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Aceite Multiuso</h3>
+            <p class="product-desc">diseñado para soldadura eléctrica en trabajos de electrónica y reparaciones.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 118 -->
+		<article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">cintas</span>
+            <img src="IMG/Rollos-de-cinta-de-aislar-de-vinil.png" alt="Rollos de cinta de aislar de vinil" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Rollos de cinta de aislar de vinil</h3>
+            <p class="product-desc">cintas adhesivas transparentes y negras, diseñadas para aislar conexiones eléctricas.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 119 -->
+		<article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">llaves inglesas</span>
+            <img src="IMG/Juego-de-llaves-mixtas.png" alt="Juego de llaves mixtas" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Juego de llaves mixtas</h3>
+            <p class="product-desc">Diseñadas para apretar y aflojar tuercas o pernos en trabajos mecánicos, de mantenimiento e instalación.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 120 -->
+		<article class="product-card" data-category="electricidad">
+          <div class="product-img-wrap">
+            <span class="product-badge">caja de registro</span>
+            <img src="IMG/Cajas-de-registro-eléctricas-Cuadradas.png" alt="Cajas de registro eléctricas Cuadradas" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cajas de registro eléctricas Cuadradas</h3>
+            <p class="product-desc">diseñadas para albergar conexiones, empalmes e interruptores o tomacorrientes en instalaciones eléctricas residenciales e industriales.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 121 -->
+		<article class="product-card" data-category="herramientas-manuales">
+          <div class="product-img-wrap">
+            <span class="product-badge">martillo</span>
+            <img src="IMG/Martillo-de-goma.png" alt="Martillo de goma" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Martillo de goma</h3>
+            <p class="product-desc">diseñado para golpear superficies delicadas sin dejar marcas ni dañar materiales en trabajos de azulejería, ensamblaje de muebles y carpintería.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 122 -->
+		<article class="product-card" data-category="jardineria">
+          <div class="product-img-wrap">
+            <span class="product-badge">rastrillo</span>
+            <img src="IMG/Rastrillo-para-césped.png" alt="Rastrillo para césped" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Rastrillo para césped</h3>
+            <p class="product-desc">Rastrillo para césped y hojas de plástico resistente color naranja con mango de madera, diseñado para la limpieza y mantenimiento de jardines, áreas verdes y patios.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 123 -->
+		<article class="product-card" data-category="automatriz">
+          <div class="product-img-wrap">
+            <span class="product-badge">embudo</span>
+            <img src="IMG/Embudo-Plástico-flexible.png" alt="Embudo Plástico flexible" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Embudo Plástico flexible</h3>
+            <p class="product-desc">diseñado con boquilla o extensión flexible estriada para trasvasar líquidos de forma limpia y segura en aplicaciones automotrices, industriales y domésticas.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 124 -->
+		<article class="product-card" data-category="ceramica">
+          <div class="product-img-wrap">
+            <span class="product-badge">ceramica</span>
+            <img src="IMG/Cerámica-decorativa.png" alt="Cerámica decorativa" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cerámica decorativa</h3>
+            <p class="product-desc">diseño geométrico multicolor en tonos beige, verde y gris, ideal para revestimiento de pisos o paredes en proyectos de construcción y remodelación.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 125 -->
+		<article class="product-card" data-category="seguridad">
+          <div class="product-img-wrap">
+            <span class="product-badge">con de seguridad</span>
+            <img src="IMG/Cono-de-seguridad.png" alt="Cono de seguridad" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cono deseguridad</h3>
+            <p class="product-desc">Diseñado para delimitación de carriles, señalización de obras y control de tráfico perimetral o vial.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 126 -->
+		<article class="product-card" data-category="hogar">
+          <div class="product-img-wrap">
+            <span class="product-badge">cepillo</span>
+            <img src="IMG/Cepilló-para-inodoro.png" alt="Cepilló para inodoro" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cepilló para inodoro</h3>
+            <p class="product-desc">Diseñado para delimitación de carriles, señalización de obras y control de tráfico perimetral o vial.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 127 -->
+		<article class="product-card" data-category="tornilleria">
+          <div class="product-img-wrap">
+            <span class="product-badge">tuercas</span>
+            <img src="IMG/Tuercas-hexagonales.png" alt="Tuercas hexagonales" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Tuercas-hexagonales</h3>
+            <p class="product-desc">Diseñadas para sujeción y ensamblaje seguro en uniones mecánicas e industriales.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 128 -->
+		<article class="product-card" data-category="hogar">
+          <div class="product-img-wrap">
+            <span class="product-badge">baldes</span>
+            <img src="IMG/Baldes-o-cubetas-de-plásticos.png" alt="Baldes o cubetas de plásticos" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Baldes o cubetas de plásticos</h3>
+            <p class="product-desc">Diseñados para la preparación, mezcla y transporte de materiales como pintura, mortero, agua o residuos en obras de construcción, mantenimiento y remodelación.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 129 -->
+		<article class="product-card" data-category="ceramica">
+          <div class="product-img-wrap">
+            <span class="product-badge">ceramica</span>
+            <img src="IMG/Cerámica-decorativa-de-Piedra.png" alt="Cerámica decorativa de Piedra" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cerámica decorativa de Piedra</h3>
+            <p class="product-desc">diseño de piedra irregular o adoquín en tonos grisáceos, ideal para el revestimiento de pisos y paredes en exteriores, patios, fachadas o proyectos de remodelación.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 130 -->
+		<article class="product-card" data-category="ceramica">
+          <div class="product-img-wrap">
+            <span class="product-badge">ceramica</span>
+            <img src="IMG/Cerámica-Blanca-Porcelanato.png" alt="Cerámica Blanca Porcelanato" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cerámica Blanca Porcelanato</h3>
+            <p class="product-desc">diseñado para el revestimiento de paredes interiores en baños, cocinas y proyectos de acabado o remodelación.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 131 -->
+		<article class="product-card" data-category="Tornilleria">
+          <div class="product-img-wrap">
+            <span class="product-badge">clavos</span>
+            <img src="IMG/Caja-de-Clavos-Para-concreto.png" alt="Caja-de-Clavos-Para-concreto" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Caja de Clavos Para concreto</h3>
+            <p class="product-desc">diseñados para la fijación segura de estructuras y soportes en superficies de concreto, mampostería y ladrillo.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 132 -->
+		<article class="product-card" data-category="ceramica">
+          <div class="product-img-wrap">
+            <span class="product-badge">ceramica</span>
+            <img src="IMG/Cerámica-Porcelanato-mármol.png" alt="Cerámica Porcelanato mármol" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Cerámica Porcelanato mármol</h3>
+            <p class="product-desc">diseño tipo mármol blanco con vetas grises, ideal para revestimiento de pisos, paredes, baños y cocinas en proyectos de construcción y remodelación.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 133 -->
+		<article class="product-card" data-category="jardineria">
+          <div class="product-img-wrap">
+            <span class="product-badge">herbocidad</span>
+            <img src="IMG/Herbocida-agrícola.png" alt="Herbocida agrícola" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Herbocida agrícola</h3>
+            <p class="product-desc">diseñado para el control no selectivo de malezas y maleza de hoja ancha o gramíneas en áreas agrícolas y de jardinería.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 134 -->
+		<article class="product-card" data-category="jardineria">
+          <div class="product-img-wrap">
+            <span class="product-badge">fertilizante</span>
+            <img src="IMG/Saco-fertilizante-Agricola.png" alt="Saco de fertilizante Agricola" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Saco de fertilizante Agricola</h3>
+            <p class="product-desc">diseñado para la nutrición, desarrollo radicular y rendimiento óptimo de cultivos, plantas y suelos en agricultura y jardinería.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 135 -->
+		<article class="product-card" data-category="cerrejeria">
+          <div class="product-img-wrap">
+            <span class="product-badge">cerradura</span>
+            <img src="IMG/Juego-de-serradura-de-entrada.png" alt="Juego de serradura de entrada" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Juego de serradura de entrada</h3>
+            <p class="product-desc">Diseñado para brindar protección y acceso controlado en la entrada principal de residencias.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 136 -->
+		<article class="product-card" data-category="hogar">
+          <div class="product-img-wrap">
+            <span class="product-badge">regulador</span>
+            <img src="IMG/Regulador-de-gas-LP-Rokacraft.png" alt="Regulador de gas LP Rokacraft" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Regulador de gas LP Rokacraft</h3>
+            <p class="product-desc">Diseñado para controlar y estabilizar la presión de suministros de gas.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 137 -->
+		<article class="product-card" data-category="hogar">
+          <div class="product-img-wrap">
+            <span class="product-badge">limpieza</span>
+            <img src="IMG/Mecha-de-Trapeador.png" alt="Mecha de Trapeador" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Mecha de Trapeador</h3>
+            <p class="product-desc">Utensilio de limpieza para limpiar pisos y eliminar polvo, suciedad y líquidos.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+		
+		<!-- 138 -->
+		<article class="product-card" data-category="hogar">
+          <div class="product-img-wrap">
+            <span class="product-badge">distupidor</span>
+            <img src="IMG/Distupidor-para-inodoro.png" alt="Distupidor para inodoro" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Distupidor para inodoro</h3>
+            <p class="product-desc">Accesorio clasico de limpieza diseñado para desobstruir tuberias y drenajes de forma rapida y por presión de aire.</p>
+            <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20cotizar:%20Clavos%20de%20concreto%20Bricker" target="_blank" class="btn btn-whatsapp">Cotizar por WhatsApp</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios y Entregas -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <p class="section-subtitle">Soluciones de entrega inmediata y apoyo integral para sus proyectos</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <article class="card-dark">
+          <h3>🚚 Servicio a Domicilio Inmediato</h3>
+          <p>
+            Contamos con logística y unidades preparadas para llevar cemento, bloques, varillas, láminas y todo tipo de materiales 
+            directamente hasta el lugar de su obra de forma rápida y segura.
+          </p>
+        </article>
+
+        <article class="card-dark">
+          <h3>📐 Asesoría Técnica y Cotización</h3>
+          <p>
+            Le ayudamos a calcular los materiales que necesita para su remodelación o nueva construcción. Brindamos presupuestos 
+            claros y precios justos garantizados.
+          </p>
+        </article>
+
+        <article class="card-dark">
+          <h3>🏗️ Ventas por Mayor y Menor</h3>
+          <p>
+            Atención personalizada para maestros de obra, contratistas y público en general con abastecimiento continuo y promociones de temporada.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cotizador y Contacto -->
+  <section class="section" id="cotizador">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Cotizador en Línea</h2>
+        <p class="section-subtitle">Envíe sus requerimientos y reciba respuesta inmediata en su celular</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="quote-contact-grid" id="contacto">
+        <!-- Formulario -->
+        <div class="form-card">
+          <h3 style="color:var(--color-primary-yellow); margin-bottom:15px; font-size:1.3rem;">Solicitar Cotización por WhatsApp</h3>
+          <form id="quoteForm">
+            <div class="form-group">
+              <label for="clientName">Nombre Completo: *</label>
+              <input type="text" id="clientName" class="form-control" placeholder="Ej. Juan Pérez" required>
+            </div>
+            <div class="form-group">
+              <label for="clientLocation">Dirección / Comunidad de Entrega: *</label>
+              <input type="text" id="clientLocation" class="form-control" placeholder="Ej. Barrio Nuevo, Langue" required>
+            </div>
+            <div class="form-group">
+              <label for="clientMaterials">Materiales requeridos y cantidades: *</label>
+              <textarea id="clientMaterials" rows="4" class="form-control" placeholder="Ej: 50 bolsas de cemento, 30 varillas de 3/8, 1 carretilla Truper..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-whatsapp" style="width:100%;">
+              📱 Enviar Cotización por WhatsApp
+            </button>
+          </form>
+        </div>
+
+        <!-- Información y Mapa -->
+        <div>
+          <div class="info-card">
+            <h3 style="color:var(--color-primary-yellow); margin-bottom:15px; font-size:1.3rem;">Información del Negocio</h3>
+            <div class="info-item"><strong>Ferretería:</strong> Inversiones Avelar</div>
+            <div class="info-item"><strong>Propietario:</strong> Don Santamaría Avelar (Tito Avelar)</div>
+            <div class="info-item"><strong>Dirección:</strong> Langue, Valle, Barrio Nuevo, Salida a San Francisco</div>
+            <div class="info-item"><strong>Teléfono / WhatsApp:</strong> +504 3344-3305</div>
+            <div class="info-item"><strong>Correo Electrónico:</strong> titoavelar@gmail.com</div>
+            <div class="info-item"><strong>Horario:</strong> Lunes a Sábado de 7:00 AM a 5:30 PM</div>
+          </div>
+
+          <div class="map-frame">
+            <iframe 
+              src="https://maps.google.com/maps?q=Langue,+Valle,+Honduras&output=embed" 
+              title="Ubicación de Inversiones Avelar en Langue, Valle" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Inversiones Avelar</h4>
+        <p>Brindando soluciones a la comunidad en el área de la construcción. Creciendo día a día con honestidad, responsabilidad y fe.</p>
+        <p style="color:var(--color-primary-yellow); font-style:italic;">«Todo lo puedo en Cristo que me fortalece» — Filipenses 4:13</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <p><a href="#inicio">Inicio</a></p>
+        <p><a href="#nosotros">Nosotros</a></p>
+        <p><a href="#catalogo">Catálogo de Productos</a></p>
+        <p><a href="#servicios">Servicios y Flete</a></p>
+        <p><a href="#cotizador">Cotizador</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto Directo</h4>
+        <p>📍 Langue, Valle, Honduras</p>
+        <p>📞 +504 3344-3305</p>
+        <p>✉️ titoavelar@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Inversiones Avelar. Todos los derechos reservados.</p>
+      <p>Sitio desarrollado por el equipo <span class="footer-credits">Innovación y crecimiento</span> (Génesis Ávila, Sindy Alvarado, Cesia Paz, Jenny Izaguirre).</p>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante WhatsApp -->
+  <a href="https://wa.me/50433443305?text=Hola%20Inversiones%20Avelar,%20deseo%20hacer%20una%20consulta" class="wa-float" target="_blank" rel="noopener" aria-label="Escríbenos a WhatsApp">
+    💬
+  </a>
+
+  <!-- Lógica JavaScript Corregida -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Año actual automático
+      const yearEl = document.getElementById('currentYear');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // 2. Menú móvil interactivo
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+          });
+        });
+      }
+
+      // 3. Fallback visual automático si una imagen aún no se coloca en IMG/
+      const images = document.querySelectorAll('.product-img-wrap img');
+      images.forEach(img => {
+        img.addEventListener('error', function() {
+          const parent = this.parentElement;
+          const altText = this.getAttribute('alt') || 'Producto Ferretero';
+          const fileName = this.getAttribute('src').split('/').pop();
+
+          const fallback = document.createElement('div');
+          fallback.className = 'img-fallback';
+          fallback.innerHTML = `
+            <div style="font-size:2rem; margin-bottom:5px;">🛠️</div>
+            <p><strong>${altText}</strong></p>
+            <span style="font-size:0.75rem; color:#fff; margin-top:5px;">IMG/${fileName}</span>
+          `;
+          this.style.display = 'none';
+          parent.appendChild(fallback);
+        });
+      });
+
+      // 4. LÓGICA DE FILTRADO Y BÚSQUEDA CORREGIDA
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const productCards = document.querySelectorAll('.product-card');
+      const searchInput = document.getElementById('searchInput');
+
+      function filterProducts() {
+        const activeBtn = document.querySelector('.filter-btn.active');
+        const filterVal = activeBtn ? activeBtn.getAttribute('data-filter').toLowerCase().trim() : 'todos';
+        const searchVal = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+        productCards.forEach(card => {
+          const cardCategory = (card.getAttribute('data-category') || '').toLowerCase().trim();
+          const titleEl = card.querySelector('.product-title');
+          const descEl = card.querySelector('.product-desc');
+          
+          const title = titleEl ? titleEl.textContent.toLowerCase() : '';
+          const desc = descEl ? descEl.textContent.toLowerCase() : '';
+
+          // Mapeo flexible para asegurar coincidencia
+          let matchesCategory = false;
+          if (filterVal === 'todos') {
+            matchesCategory = true;
+          } else if (filterVal === cardCategory) {
+            matchesCategory = true;
+          } else if (filterVal === 'cerrajeria' && (cardCategory.includes('cerrajeria') || cardCategory.includes('fijacion') || cardCategory.includes('adhesivos'))) {
+            matchesCategory = true;
+          } else if (filterVal === 'jardineria' && (cardCategory.includes('jardineria') || cardCategory.includes('agro'))) {
+            matchesCategory = true;
+          } else if (filterVal === 'automotriz' && (cardCategory.includes('automotriz') || cardCategory.includes('gas') || cardCategory.includes('lubricantes'))) {
+            matchesCategory = true;
+          }
+
+          const matchesSearch = (title.includes(searchVal) || desc.includes(searchVal));
+
+          if (matchesCategory && matchesSearch) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          filterProducts();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', filterProducts);
+      }
+
+      // 5. Envío de Cotización directa a WhatsApp
+      const quoteForm = document.getElementById('quoteForm');
+      if (quoteForm) {
+        quoteForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const name = document.getElementById('clientName').value.trim();
+          const location = document.getElementById('clientLocation').value.trim();
+          const materials = document.getElementById('clientMaterials').value.trim();
+
+          const message = `*SOLICITUD DE COTIZACIÓN - INVERSIONES AVELAR*%0A%0A` +
+                          `*Cliente:* ${encodeURIComponent(name)}%0A` +
+                          `*Ubicación de entrega:* ${encodeURIComponent(location)}%0A` +
+                          `*Materiales solicitados:*%0A${encodeURIComponent(materials)}%0A%0A` +
+                          `_Enviado desde el sitio web de Inversiones Avelar._`;
+
+          const phone = "50433443305";
+          window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+          quoteForm.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
