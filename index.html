@@ -666,19 +666,29 @@
         <span style="margin-left: 15px;">⏰ Lun - Sáb: 7:00 AM - 5:30 PM</span>
       </div>
       <div>
-        <span>📞 Pedidos: +504 3344-3305</span>
+        <span>📞 Pedidos: +504 3349-3305</span>
       </div>
     </div>
   </div>
 
   <!-- Navegación Principal -->
-      <a href="#inicio" class="brand-logo">
-        <div class="brand-icon">IA</div>
-        <div class="brand-text">
-          <h1>INVERSIONES AVELAR</h1>
-          <span>FERRETERÍA Y CONSTRUCCIÓN</span>
-        </div>
-      </a>
+    <nav class="navbar">
+    <div class="container nav-container">
+
+        <!-- Logo y nombre de la ferretería -->
+        <a href="#inicio" class="brand-logo">
+
+            <div class="brand-icon">
+                <img src="img/logo.png"
+                     alt="Logo de Inversiones Avelar">
+            </div>
+
+            <div class="brand-text">
+                <h1>INVERSIONES AVELAR</h1>
+                <span>FERRETERÍA Y CONSTRUCCIÓN</span>
+            </div>
+
+        </a>
 
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menú">☰</button>
 
@@ -2959,7 +2969,7 @@
             <div class="info-item"><strong>Ferretería:</strong> Inversiones Avelar</div>
             <div class="info-item"><strong>Propietario:</strong> Don Santamaría Avelar (Tito Avelar)</div>
             <div class="info-item"><strong>Dirección:</strong> Langue, Valle, Barrio Nuevo, Salida a San Francisco</div>
-            <div class="info-item"><strong>Teléfono / WhatsApp:</strong> +504 3344-3305</div>
+            <div class="info-item"><strong>Teléfono / WhatsApp:</strong> +504 3349-3305</div>
             <div class="info-item"><strong>Correo Electrónico:</strong> titoavelar@gmail.com</div>
             <div class="info-item"><strong>Horario:</strong> Lunes a Sábado de 7:00 AM a 5:30 PM</div>
           </div>
@@ -2997,7 +3007,7 @@
       <div class="footer-col">
         <h4>Contacto Directo</h4>
         <p>📍 Langue, Valle, Honduras</p>
-        <p>📞 +504 3344-3305</p>
+        <p>📞 +504 3349-3305</p>
         <p>✉️ titoavelar@gmail.com</p>
       </div>
     </div>
@@ -3045,7 +3055,7 @@
           const fallback = document.createElement('div');
           fallback.className = 'img-fallback';
           fallback.innerHTML = `
-            <div style="font-size:2rem; margin-bottom:5px;">🛠️</div>
+            <div style="font-size:2rem; margin-bottom:5px;">️</div>
             <p><strong>${altText}</strong></p>
             <span style="font-size:0.75rem; color:#fff; margin-top:5px;">IMG/${fileName}</span>
           `;
@@ -3123,7 +3133,7 @@
                           `*Materiales solicitados:*%0A${encodeURIComponent(materials)}%0A%0A` +
                           `_Enviado desde el sitio web de Inversiones Avelar._`;
 
-          const phone = "50433443305";
+          const phone = "50433493305";
           window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
           quoteForm.reset();
         });
