@@ -131,6 +131,8 @@ button, input, select, textarea {
   align-items: center;
   gap: 12px;
 }
+
+/* --- CORRECCIÓN DEL LOGO --- */
 .brand-icon {
   background-color: var(--color-primary-yellow);
   color: var(--color-black);
@@ -143,7 +145,18 @@ button, input, select, textarea {
   font-weight: 700;
   font-size: 1.35rem;
   border: 2px solid var(--color-white);
+  overflow: hidden; /* Evita que la imagen se salga del cuadro */
+  flex-shrink: 0;   /* Evita que el cuadro se encoja si el texto es largo */
 }
+
+/* Nueva regla para la imagen del logo */
+.brand-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ajusta la imagen manteniendo su proporción */
+}
+/* --------------------------- */
+
 .brand-titles h1, .brand-titles .logo-title {
   font-size: 1.35rem;
   font-weight: 700;
